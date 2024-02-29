@@ -1,3 +1,52 @@
 body {
   font-family: "Unbounded", sans-serif;
 }
+
+.swiper-mainBanner-pagination .swiper-pagination-bullet {
+  background: rgba(131, 131, 131, 0.85) !important;
+
+  transition: all 0.3s ease 0s;
+}
+
+.swiper-mainBanner-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: rgba(255, 255, 255, 0.85) !important;
+  width: 33px !important;
+  border-radius: 10px !important;
+}
+
+.swiper-buyImage-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: rgba(243, 234, 204, 0.85) !important;
+  transition: all 0.3s ease 0s;
+}
+
+.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-btn::after {
+  font-size: 19.5px !important;
+}
+
+.swiper-buyImage-pagination {
+  grid-column: 2;
+}
+
+@media (max-width: 768px) {
+  .swiper-btn.swiper-button-prev::after,
+  .swiper-btn.swiper-button-next::after {
+    content: "";
+  }
+
+  .swiper-buyImage-pagination {
+    bottom: -25px !important;
+  }
+}
+
+@media (max-width: 460px) {
+  .swiper-buyImage-pagination .swiper-pagination-bullet {
+    width: 4px !important;
+    height: 4px !important;
+  }
+}

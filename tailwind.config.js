@@ -23,10 +23,14 @@ module.exports = {
         secondary: "#B41C21",
         primary: "#ffffff",
         third: "#F4EAC8",
+
         red: "#CD3836",
+        red2: "#A42D2A",
       },
       gridTemplateColumns: {
         newItems: "repeat(4, 1fr)",
+        buyImage: "1.35fr 0.55fr",
+        buyImageMobile: "1fr 100px",
       },
       fontFamily: {
         main: ["Unbounded"],
@@ -34,6 +38,7 @@ module.exports = {
       },
 
       screens: {
+        mobile: "460px",
         tablet: "768px",
 
         laptop: "1024px",
