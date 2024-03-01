@@ -36,6 +36,8 @@ module.exports = {
       fontFamily: {
         main: ["Unbounded"],
         montserrat: ["Montserrat"],
+        roboto: ["Roboto"],
+        inter: ["Inter"],
       },
 
       screens: {

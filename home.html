@@ -18,11 +18,19 @@
 
     <!-- Шрифты -->
     <link
-      href="https://fonts.googleapis.com/css?family=Unbounded:300,regular,500,600,700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Unbounded:200,300,regular,500,600,700&display=swap"
       rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:regular,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap"
       rel="stylesheet"
     />
     <!-- /Шрифты -->
@@ -51,6 +59,8 @@
             fontFamily: {
               main: ["Unbounded"],
               montserrat: ["Montserrat"],
+              roboto: ["Roboto"],
+              inter: ["Inter"],
             },
 
             screens: {
@@ -78,7 +88,7 @@
               />
 
               <div
-                class="absolute flex translate-y-[-50%] flex-col items-center justify-center gap-[1.5rem] text-primary max-tablet:right-[12px] max-tablet:top-[40%] tablet:left-2/4 tablet:top-2/4 tablet:translate-x-[-50%]"
+                class="absolute flex translate-y-[-50%] flex-col items-center justify-center gap-[1.5rem] text-primary max-tablet:right-[0.75rem] max-tablet:top-[40%] tablet:left-2/4 tablet:top-2/4 tablet:translate-x-[-50%]"
               >
                 <h3
                   class="uppercase max-tablet:max-w-[7.563rem] max-tablet:text-right max-tablet:text-[0.625rem] max-tablet:font-light max-tablet:leading-[0.75rem] max-tablet:tracking-[2.5px] tablet:max-w-[15.625rem] tablet:text-center tablet:text-2xl tablet:font-bold tablet:tracking-[0.375rem]"
@@ -104,7 +114,7 @@
               />
 
               <div
-                class="absolute flex translate-y-[-50%] flex-col items-center justify-center gap-[1.5rem] text-primary max-tablet:right-[12px] max-tablet:top-[40%] tablet:left-2/4 tablet:top-2/4 tablet:translate-x-[-50%]"
+                class="absolute flex translate-y-[-50%] flex-col items-center justify-center gap-[1.5rem] text-primary max-tablet:right-[0.75rem] max-tablet:top-[40%] tablet:left-2/4 tablet:top-2/4 tablet:translate-x-[-50%]"
               >
                 <h3
                   class="uppercase max-tablet:max-w-[7.563rem] max-tablet:text-right max-tablet:text-[0.625rem] max-tablet:font-light max-tablet:leading-[0.75rem] max-tablet:tracking-[2.5px] tablet:max-w-[15.625rem] tablet:text-center tablet:text-2xl tablet:font-bold tablet:tracking-[0.375rem]"
@@ -130,7 +140,7 @@
               />
 
               <div
-                class="absolute flex translate-y-[-50%] flex-col items-center justify-center gap-[1.5rem] text-primary max-tablet:right-[12px] max-tablet:top-[40%] tablet:left-2/4 tablet:top-2/4 tablet:translate-x-[-50%]"
+                class="absolute flex translate-y-[-50%] flex-col items-center justify-center gap-[1.5rem] text-primary max-tablet:right-[0.75rem] max-tablet:top-[40%] tablet:left-2/4 tablet:top-2/4 tablet:translate-x-[-50%]"
               >
                 <h3
                   class="uppercase max-tablet:max-w-[7.563rem] max-tablet:text-right max-tablet:text-[0.625rem] max-tablet:font-light max-tablet:leading-[0.75rem] max-tablet:tracking-[2.5px] tablet:max-w-[15.625rem] tablet:text-center tablet:text-2xl tablet:font-bold tablet:tracking-[0.375rem]"
@@ -148,6 +158,7 @@
           </article>
         </div>
 
+        <!-- Кнопки (Назад/Вперед) -->
         <div
           class="swiper-btn swiper-button-next h-[19.5px] text-primary max-tablet:top-[62%] max-mobile:top-[73%]"
         >
@@ -167,6 +178,7 @@
             />
           </svg>
         </div>
+
         <div
           class="swiper-btn swiper-button-prev h-[19.5px] text-primary max-tablet:top-[62%] max-mobile:top-[73%]"
         >
@@ -186,45 +198,48 @@
             />
           </svg>
         </div>
+        <!-- /Кнопки (Назад/Вперед) -->
 
+        <!-- Пагинация -->
         <div
           class="swiper-pagination swiper-mainBanner-pagination max-tablet:hidden"
         ></div>
+        <!-- /Пагинация -->
       </div>
     </section>
     <!-- /Главный банер - слайдер -->
 
     <!-- Ряд кнопок -->
     <section
-      class="mx-auto my-0 block max-w-[84rem] overflow-x-scroll whitespace-nowrap px-3 py-11 text-center font-montserrat max-laptop:text-[14px] max-laptop:tracking-[0.15px] max-tablet:mb-[40px] max-tablet:pb-[20px] max-tablet:pt-[32px] max-tablet:text-[8px] laptop:tracking-[2px]"
+      class="mx-auto my-0 block max-w-[84rem] overflow-x-scroll whitespace-nowrap px-3 py-11 text-center font-montserrat max-laptop:text-[0.875rem] max-laptop:tracking-[0.15px] max-tablet:mb-[2.5rem] max-tablet:pb-[1.25rem] max-tablet:pt-[2rem] max-tablet:text-[0.5rem] laptop:tracking-[2px]"
     >
       <button
-        class="mr-6 h-11 w-full shrink-0 rounded-[34px] border-[1px] border-[#000000] max-laptop:mr-4 max-laptop:max-w-[120px] max-tablet:mr-[8px] max-tablet:h-5 max-tablet:max-w-[68px] laptop:max-w-[10.625rem]"
+        class="mr-6 h-11 w-full shrink-0 rounded-[34px] border-[1px] border-[#000000] max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
       >
         кольца
       </button>
       <button
-        class="mr-6 h-11 w-full shrink-0 rounded-[34px] border-[1px] border-[#000000] max-laptop:mr-4 max-laptop:max-w-[120px] max-tablet:mr-[8px] max-tablet:h-5 max-tablet:max-w-[68px] laptop:max-w-[10.625rem]"
+        class="mr-6 h-11 w-full shrink-0 rounded-[34px] border-[1px] border-[#000000] max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
       >
         серьги
       </button>
       <button
-        class="mr-6 h-11 w-full shrink-0 rounded-[34px] border-[1px] border-[#000000] max-laptop:mr-4 max-laptop:max-w-[120px] max-tablet:mr-[8px] max-tablet:h-5 max-tablet:max-w-[68px] laptop:max-w-[10.625rem]"
+        class="mr-6 h-11 w-full shrink-0 rounded-[34px] border-[1px] border-[#000000] max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
       >
         подвески
       </button>
       <button
-        class="mr-6 h-11 w-full shrink-0 rounded-[34px] border-[1px] border-[#000000] max-laptop:mr-4 max-laptop:max-w-[120px] max-tablet:mr-[8px] max-tablet:h-5 max-tablet:max-w-[68px] laptop:max-w-[10.625rem]"
+        class="mr-6 h-11 w-full shrink-0 rounded-[34px] border-[1px] border-[#000000] max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
       >
         броши
       </button>
       <button
-        class="mr-6 h-11 w-full shrink-0 rounded-[34px] border-[1px] border-[#000000] max-laptop:mr-4 max-laptop:max-w-[120px] max-tablet:mr-[8px] max-tablet:h-5 max-tablet:max-w-[68px] laptop:max-w-[10.625rem]"
+        class="mr-6 h-11 w-full shrink-0 rounded-[34px] border-[1px] border-[#000000] max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
       >
         сумки
       </button>
       <button
-        class="mr-6 h-11 w-full shrink-0 rounded-[34px] border-[1px] border-[#000000] max-laptop:mr-4 max-laptop:max-w-[120px] max-tablet:mr-[8px] max-tablet:h-5 max-tablet:max-w-[68px] laptop:max-w-[10.625rem]"
+        class="mr-6 h-11 w-full shrink-0 rounded-[34px] border-[1px] border-[#000000] max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
       >
         сертификаты
       </button>
@@ -232,9 +247,9 @@
     <!-- /Ряд кнопок -->
 
     <!-- Новинки -->
-    <section class="pb-[70px] max-tablet:pb-[45px]">
+    <section class="pb-[4.375rem] max-tablet:pb-[2.813rem]">
       <div class="mx-auto my-0 max-w-[84rem] px-3">
-        <div class="pb-[65px] max-tablet:pb-[74px]">
+        <div class="pb-[4.063rem] max-tablet:pb-[4.625rem]">
           <h4
             class="pb-6 text-center text-[0.875rem] font-bold tracking-[0.25rem]"
           >
@@ -243,162 +258,154 @@
 
           <div class="swiper-newItems overflow-hidden">
             <div
-              class="swiper-wrapper laptop:grid laptop:grid-cols-newItems laptop:gap-[46px]"
+              class="swiper-wrapper laptop:grid laptop:grid-cols-newItems laptop:gap-[2.875rem]"
             >
-              <div class="swiper-slide">
-                <article>
-                  <div class="relative">
-                    <img
-                      class="w-full max-tablet:aspect-[136/165]"
-                      src="./public/img/newItems/1.png"
-                      srcset="./public/img/newItems/1@2x.png 2x"
-                      alt="1.png"
-                    />
+              <article class="swiper-slide">
+                <div class="relative">
+                  <img
+                    class="w-full max-tablet:aspect-[136/165]"
+                    src="./public/img/newItems/1.png"
+                    srcset="./public/img/newItems/1@2x.png 2x"
+                    alt="1.png"
+                  />
 
-                    <svg
-                      class="absolute right-[8px] top-[10px]"
-                      width="18.430664"
-                      height="16.285156"
-                      viewBox="0 0 18.4307 16.2852"
-                      fill="none"
-                    >
-                      <path
-                        id="Vector 15"
-                        d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
-                        stroke="#222222"
-                        stroke-opacity="1.000000"
-                        stroke-width="1.000000"
-                      />
-                    </svg>
-                  </div>
-
-                  <div
-                    class="flex flex-col gap-[0.5rem] pt-5 text-[14px] font-medium max-tablet:pt-[4px] max-tablet:text-[10px]"
+                  <svg
+                    class="absolute right-[0.5rem] top-[0.625rem]"
+                    width="18.430664"
+                    height="16.285156"
+                    viewBox="0 0 18.4307 16.2852"
+                    fill="none"
                   >
-                    <p>Жакет Red</p>
-
-                    <span>32,000 ₽</span>
-                  </div>
-                </article>
-              </div>
-
-              <div class="swiper-slide">
-                <article>
-                  <div class="relative">
-                    <img
-                      class="w-full max-tablet:aspect-[136/165]"
-                      src="./public/img/newItems/2.png"
-                      srcset="./public/img/newItems/2@2x.png 2x"
-                      alt="2.png"
+                    <path
+                      id="Vector 15"
+                      d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
+                      stroke="#222222"
+                      stroke-opacity="1.000000"
+                      stroke-width="1.000000"
                     />
+                  </svg>
+                </div>
 
-                    <svg
-                      class="absolute right-[8px] top-[10px]"
-                      width="18.430664"
-                      height="16.285156"
-                      viewBox="0 0 18.4307 16.2852"
-                      fill="none"
-                    >
-                      <path
-                        id="Vector 15"
-                        d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
-                        stroke="#222222"
-                        stroke-opacity="1.000000"
-                        stroke-width="1.000000"
-                      />
-                    </svg>
-                  </div>
+                <div
+                  class="flex flex-col gap-[0.5rem] pt-5 text-[0.875rem] font-medium max-tablet:pt-[0.25rem] max-tablet:text-[0.625rem]"
+                >
+                  <p>Жакет Red</p>
 
-                  <div
-                    class="flex flex-col gap-[0.5rem] pt-5 text-[14px] font-medium max-tablet:pt-[4px] max-tablet:text-[10px]"
+                  <span>32,000 ₽</span>
+                </div>
+              </article>
+
+              <article class="swiper-slide">
+                <div class="relative">
+                  <img
+                    class="w-full max-tablet:aspect-[136/165]"
+                    src="./public/img/newItems/2.png"
+                    srcset="./public/img/newItems/2@2x.png 2x"
+                    alt="2.png"
+                  />
+
+                  <svg
+                    class="absolute right-[0.5rem] top-[0.625rem]"
+                    width="18.430664"
+                    height="16.285156"
+                    viewBox="0 0 18.4307 16.2852"
+                    fill="none"
                   >
-                    <p>Жакет Red</p>
-
-                    <span>32,000 ₽</span>
-                  </div>
-                </article>
-              </div>
-
-              <div class="swiper-slide">
-                <article>
-                  <div class="relative">
-                    <img
-                      class="w-full max-tablet:aspect-[136/165]"
-                      src="./public/img/newItems/3.png"
-                      srcset="./public/img/newItems/3@2x.png 2x"
-                      alt="3.png"
+                    <path
+                      id="Vector 15"
+                      d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
+                      stroke="#222222"
+                      stroke-opacity="1.000000"
+                      stroke-width="1.000000"
                     />
+                  </svg>
+                </div>
 
-                    <svg
-                      class="absolute right-[8px] top-[10px]"
-                      width="18.430664"
-                      height="16.285156"
-                      viewBox="0 0 18.4307 16.2852"
-                      fill="none"
-                    >
-                      <path
-                        id="Vector 15"
-                        d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
-                        stroke="#222222"
-                        stroke-opacity="1.000000"
-                        stroke-width="1.000000"
-                      />
-                    </svg>
-                  </div>
+                <div
+                  class="flex flex-col gap-[0.5rem] pt-5 text-[0.875rem] font-medium max-tablet:pt-[0.25rem] max-tablet:text-[0.625rem]"
+                >
+                  <p>Жакет Red</p>
 
-                  <div
-                    class="flex flex-col gap-[0.5rem] pt-5 text-[14px] font-medium max-tablet:pt-[4px] max-tablet:text-[10px]"
+                  <span>32,000 ₽</span>
+                </div>
+              </article>
+
+              <article class="swiper-slide">
+                <div class="relative">
+                  <img
+                    class="w-full max-tablet:aspect-[136/165]"
+                    src="./public/img/newItems/3.png"
+                    srcset="./public/img/newItems/3@2x.png 2x"
+                    alt="3.png"
+                  />
+
+                  <svg
+                    class="absolute right-[0.5rem] top-[0.625rem]"
+                    width="18.430664"
+                    height="16.285156"
+                    viewBox="0 0 18.4307 16.2852"
+                    fill="none"
                   >
-                    <p>Жакет Red</p>
-
-                    <span>32,000 ₽</span>
-                  </div>
-                </article>
-              </div>
-
-              <div class="swiper-slide">
-                <article>
-                  <div class="relative">
-                    <img
-                      class="w-full max-tablet:aspect-[136/165]"
-                      src="./public/img/newItems/4.png"
-                      srcset="./public/img/newItems/4@2x.png 2x"
-                      alt="4.png"
+                    <path
+                      id="Vector 15"
+                      d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
+                      stroke="#222222"
+                      stroke-opacity="1.000000"
+                      stroke-width="1.000000"
                     />
+                  </svg>
+                </div>
 
-                    <svg
-                      class="absolute right-[8px] top-[10px]"
-                      width="18.430664"
-                      height="16.285156"
-                      viewBox="0 0 18.4307 16.2852"
-                      fill="none"
-                    >
-                      <path
-                        id="Vector 15"
-                        d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
-                        stroke="#222222"
-                        stroke-opacity="1.000000"
-                        stroke-width="1.000000"
-                      />
-                    </svg>
-                  </div>
+                <div
+                  class="flex flex-col gap-[0.5rem] pt-5 text-[0.875rem] font-medium max-tablet:pt-[0.25rem] max-tablet:text-[0.625rem]"
+                >
+                  <p>Жакет Red</p>
 
-                  <div
-                    class="flex flex-col gap-[0.5rem] pt-5 text-[14px] font-medium max-tablet:pt-[4px] max-tablet:text-[10px]"
+                  <span>32,000 ₽</span>
+                </div>
+              </article>
+
+              <article class="swiper-slide">
+                <div class="relative">
+                  <img
+                    class="w-full max-tablet:aspect-[136/165]"
+                    src="./public/img/newItems/4.png"
+                    srcset="./public/img/newItems/4@2x.png 2x"
+                    alt="4.png"
+                  />
+
+                  <svg
+                    class="absolute right-[0.5rem] top-[0.625rem]"
+                    width="18.430664"
+                    height="16.285156"
+                    viewBox="0 0 18.4307 16.2852"
+                    fill="none"
                   >
-                    <p>Жакет Red</p>
+                    <path
+                      id="Vector 15"
+                      d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
+                      stroke="#222222"
+                      stroke-opacity="1.000000"
+                      stroke-width="1.000000"
+                    />
+                  </svg>
+                </div>
 
-                    <span>32,000 ₽</span>
-                  </div>
-                </article>
-              </div>
+                <div
+                  class="flex flex-col gap-[0.5rem] pt-5 text-[0.875rem] font-medium max-tablet:pt-[0.25rem] max-tablet:text-[0.625rem]"
+                >
+                  <p>Жакет Red</p>
+
+                  <span>32,000 ₽</span>
+                </div>
+              </article>
             </div>
           </div>
         </div>
 
         <div class="swiper-newItemsBottom overflow-hidden">
           <div
-            class="swiper-wrapper laptop:grid laptop:grid-cols-3 laptop:gap-[8px]"
+            class="swiper-wrapper laptop:grid laptop:grid-cols-3 laptop:gap-[0.5rem]"
           >
             <article class="swiper-slide relative">
               <img
@@ -409,15 +416,15 @@
               />
 
               <div
-                class="absolute flex flex-col items-start uppercase text-primary max-tablet:bottom-[20px] max-tablet:left-[8px] max-tablet:gap-[7px] tablet:bottom-[25px] tablet:left-[29px] tablet:max-w-[215px] tablet:gap-[17px]"
+                class="absolute flex flex-col items-start uppercase text-primary max-tablet:bottom-[1.25rem] max-tablet:left-[0.5rem] max-tablet:gap-[0.438rem] tablet:bottom-[1.563rem] tablet:left-[1.813rem] tablet:max-w-[13.438rem] tablet:gap-[1.063rem]"
               >
                 <p
-                  class="text-[14px] font-bold tracking-[2.1px] max-tablet:text-[10px] max-tablet:tracking-[1.5px]"
+                  class="text-[0.875rem] font-bold tracking-[2.1px] max-tablet:text-[0.625rem] max-tablet:tracking-[1.5px]"
                 >
                   Кольца на любой случай
                 </p>
                 <button
-                  class="min-w-[133px] rounded-[34px] border-[1px] border-primary font-montserrat text-[10px] font-bold max-tablet:min-h-[16px] max-tablet:min-w-[60px] max-tablet:text-[8px] max-tablet:tracking-[0.4px] tablet:min-h-[36px] tablet:tracking-[2.5px]"
+                  class="min-w-[8.313rem] rounded-[34px] border-[1px] border-primary font-montserrat text-[0.625rem] font-bold max-tablet:min-h-[1rem] max-tablet:min-w-[3.75rem] max-tablet:text-[0.5rem] max-tablet:tracking-[0.4px] tablet:min-h-[2.25rem] tablet:tracking-[2.5px]"
                 >
                   купить
                 </button>
@@ -433,15 +440,15 @@
               />
 
               <div
-                class="absolute flex flex-col items-start uppercase text-primary max-tablet:bottom-[20px] max-tablet:left-[8px] max-tablet:gap-[7px] tablet:bottom-[25px] tablet:left-[29px] tablet:max-w-[215px] tablet:gap-[17px]"
+                class="absolute flex flex-col items-start uppercase text-primary max-tablet:bottom-[1.25rem] max-tablet:left-[0.5rem] max-tablet:gap-[0.438rem] tablet:bottom-[1.563rem] tablet:left-[1.813rem] tablet:max-w-[13.438rem] tablet:gap-[1.063rem]"
               >
                 <p
-                  class="text-[14px] font-bold tracking-[2.1px] max-tablet:text-[10px] max-tablet:tracking-[1.5px]"
+                  class="text-[0.875rem] font-bold tracking-[2.1px] max-tablet:text-[0.625rem] max-tablet:tracking-[1.5px]"
                 >
                   Кольца на любой случай
                 </p>
                 <button
-                  class="min-w-[133px] rounded-[34px] border-[1px] border-primary font-montserrat text-[10px] font-bold max-tablet:min-h-[16px] max-tablet:min-w-[60px] max-tablet:text-[8px] max-tablet:tracking-[0.4px] tablet:min-h-[36px] tablet:tracking-[2.5px]"
+                  class="min-w-[8.313rem] rounded-[34px] border-[1px] border-primary font-montserrat text-[0.625rem] font-bold max-tablet:min-h-[1rem] max-tablet:min-w-[3.75rem] max-tablet:text-[0.5rem] max-tablet:tracking-[0.4px] tablet:min-h-[2.25rem] tablet:tracking-[2.5px]"
                 >
                   купить
                 </button>
@@ -457,15 +464,15 @@
               />
 
               <div
-                class="absolute flex flex-col items-start uppercase text-primary max-tablet:bottom-[20px] max-tablet:left-[8px] max-tablet:gap-[7px] tablet:bottom-[25px] tablet:left-[29px] tablet:max-w-[215px] tablet:gap-[17px]"
+                class="absolute flex flex-col items-start uppercase text-primary max-tablet:bottom-[1.25rem] max-tablet:left-[0.5rem] max-tablet:gap-[0.438rem] tablet:bottom-[1.563rem] tablet:left-[1.813rem] tablet:max-w-[13.438rem] tablet:gap-[1.063rem]"
               >
                 <p
-                  class="text-[14px] font-bold tracking-[2.1px] max-tablet:text-[10px] max-tablet:tracking-[1.5px]"
+                  class="text-[0.875rem] font-bold tracking-[2.1px] max-tablet:text-[0.625rem] max-tablet:tracking-[1.5px]"
                 >
                   Кольца на любой случай
                 </p>
                 <button
-                  class="min-w-[133px] rounded-[34px] border-[1px] border-primary font-montserrat text-[10px] font-bold max-tablet:min-h-[16px] max-tablet:min-w-[60px] max-tablet:text-[8px] max-tablet:tracking-[0.4px] tablet:min-h-[36px] tablet:tracking-[2.5px]"
+                  class="min-w-[8.313rem] rounded-[34px] border-[1px] border-primary font-montserrat text-[0.625rem] font-bold max-tablet:min-h-[1rem] max-tablet:min-w-[3.75rem] max-tablet:text-[0.5rem] max-tablet:tracking-[0.4px] tablet:min-h-[2.25rem] tablet:tracking-[2.5px]"
                 >
                   купить
                 </button>
@@ -478,21 +485,21 @@
     <!-- /Новинки -->
 
     <!-- Купить образ -->
-    <section class="bg-red max-mobile:pb-[40px] mobile:pb-[65px]">
+    <section class="bg-red max-mobile:pb-[2.5rem] mobile:pb-[4.063rem]">
       <div
-        class="mx-auto my-0 max-w-[1095px] px-3 max-tablet:pl-[20px] max-tablet:pr-8"
+        class="mx-auto my-0 max-w-[1095px] px-3 max-tablet:pl-[1.25rem] max-tablet:pr-8"
       >
         <h4
-          class="text-center text-third max-mobile:pb-[10px] max-mobile:pt-2 max-mobile:text-[10px] mobile:py-[41px]"
+          class="text-center text-third max-mobile:pb-[0.625rem] max-mobile:pt-2 max-mobile:text-[0.625rem] mobile:py-[2.563rem]"
         >
           купить образ
         </h4>
 
         <div
-          class="relative grid grid-cols-2 gap-4 max-tablet:gap-[20px] max-mobile:grid-cols-buyImageMobile mobile:grid-cols-buyImage"
+          class="relative grid grid-cols-2 gap-4 max-tablet:gap-[1.25rem] max-mobile:grid-cols-buyImageMobile mobile:grid-cols-buyImage"
         >
           <img
-            class="h-full w-full object-cover max-mobile:max-h-[165px]"
+            class="h-full w-full object-cover max-mobile:max-h-[10.313rem]"
             src="./public/img/buyImage/1.png"
             srcset="./public/img/buyImage/1@2x.png 2x"
             alt="1.png"
@@ -510,14 +517,14 @@
 
                 <div class="flex flex-col items-center justify-center">
                   <div
-                    class="flex flex-col items-center gap-[5px] font-medium text-third max-laptop:py-[10px] max-tablet:text-[8px] tablet:text-[14px] laptop:py-[20px]"
+                    class="flex flex-col items-center gap-[5px] font-medium text-third max-laptop:py-[0.625rem] max-tablet:text-[0.5rem] tablet:text-[0.875rem] laptop:py-[1.25rem]"
                   >
                     <p class="text-center">Серьги с жемчугом</p>
                     <span>12,600₽</span>
                   </div>
 
                   <button
-                    class="max-w-[170px] rounded-[34px] bg-third font-montserrat text-[12px] font-bold uppercase tracking-[3px] text-red2 max-tablet:min-h-[35px] max-mobile:min-h-[16px] max-mobile:w-[59px] max-mobile:text-[8px] max-mobile:tracking-[0.4px] mobile:w-full tablet:min-h-[45px]"
+                    class="max-w-[10.625rem] rounded-[34px] bg-third font-montserrat text-[0.75rem] font-bold uppercase tracking-[3px] text-red2 max-tablet:min-h-[2.188rem] max-mobile:min-h-[1rem] max-mobile:w-[59px] max-mobile:text-[0.5rem] max-mobile:tracking-[0.4px] mobile:w-full tablet:min-h-[2.813rem]"
                   >
                     купить
                   </button>
@@ -533,14 +540,14 @@
 
                 <div class="flex flex-col items-center justify-center">
                   <div
-                    class="flex flex-col items-center gap-[5px] font-medium text-third max-laptop:py-[10px] max-tablet:text-[8px] tablet:text-[14px] laptop:py-[20px]"
+                    class="flex flex-col items-center gap-[5px] font-medium text-third max-laptop:py-[0.625rem] max-tablet:text-[0.5rem] tablet:text-[0.875rem] laptop:py-[1.25rem]"
                   >
                     <p class="text-center">Серьги с жемчугом</p>
                     <span>12,600₽</span>
                   </div>
 
                   <button
-                    class="max-w-[170px] rounded-[34px] bg-third font-montserrat text-[12px] font-bold uppercase tracking-[3px] text-red2 max-tablet:min-h-[35px] max-mobile:min-h-[16px] max-mobile:w-[59px] max-mobile:text-[8px] max-mobile:tracking-[0.4px] mobile:w-full tablet:min-h-[45px]"
+                    class="max-w-[10.625rem] rounded-[34px] bg-third font-montserrat text-[0.75rem] font-bold uppercase tracking-[3px] text-red2 max-tablet:min-h-[2.188rem] max-mobile:min-h-[1rem] max-mobile:w-[59px] max-mobile:text-[0.5rem] max-mobile:tracking-[0.4px] mobile:w-full tablet:min-h-[2.813rem]"
                   >
                     купить
                   </button>
@@ -556,14 +563,14 @@
 
                 <div class="flex flex-col items-center justify-center">
                   <div
-                    class="flex flex-col items-center gap-[5px] font-medium text-third max-laptop:py-[10px] max-tablet:text-[8px] tablet:text-[14px] laptop:py-[20px]"
+                    class="flex flex-col items-center gap-[5px] font-medium text-third max-laptop:py-[0.625rem] max-tablet:text-[0.5rem] tablet:text-[0.875rem] laptop:py-[1.25rem]"
                   >
                     <p class="text-center">Серьги с жемчугом</p>
                     <span>12,600₽</span>
                   </div>
 
                   <button
-                    class="max-w-[170px] rounded-[34px] bg-third font-montserrat text-[12px] font-bold uppercase tracking-[3px] text-red2 max-tablet:min-h-[35px] max-mobile:min-h-[16px] max-mobile:w-[59px] max-mobile:text-[8px] max-mobile:tracking-[0.4px] mobile:w-full tablet:min-h-[45px]"
+                    class="max-w-[10.625rem] rounded-[34px] bg-third font-montserrat text-[0.75rem] font-bold uppercase tracking-[3px] text-red2 max-tablet:min-h-[2.188rem] max-mobile:min-h-[1rem] max-mobile:w-[59px] max-mobile:text-[0.5rem] max-mobile:tracking-[0.4px] mobile:w-full tablet:min-h-[2.813rem]"
                   >
                     купить
                   </button>
@@ -574,7 +581,7 @@
         </div>
 
         <div
-          class="relative grid grid-cols-2 gap-4 max-tablet:gap-[20px] max-mobile:grid-cols-buyImageMobile mobile:grid-cols-buyImage"
+          class="relative grid grid-cols-2 gap-4 max-tablet:gap-[1.25rem] max-mobile:grid-cols-buyImageMobile mobile:grid-cols-buyImage"
         >
           <div class="swiper-pagination swiper-buyImage-pagination"></div>
         </div>
@@ -583,22 +590,22 @@
     <!-- /Купить образ -->
 
     <!-- фирменный магазин -->
-    <section class="max-mobile:py-[58px] mobile:py-[77px]">
+    <section class="max-mobile:py-[3.625rem] mobile:py-[4.813rem]">
       <div class="mx-auto my-0 max-w-[1095px] px-4">
         <div
-          class="flex items-center justify-between max-mobile:gap-[15px] mobile:gap-5"
+          class="flex items-center justify-between max-mobile:gap-[0.938rem] mobile:gap-5"
         >
           <div
-            class="max-tablet:max-w-[200px] max-mobile:max-w-[125px] tablet:max-w-[270px]"
+            class="max-tablet:max-w-[12.5rem] max-mobile:max-w-[7.813rem] tablet:max-w-[16.875rem]"
           >
             <h3
-              class="font-bold uppercase text-red2 max-tablet:text-[18px] max-mobile:text-[10px] max-mobile:tracking-[2.5px] mobile:tracking-[5.25px] tablet:text-[21px]"
+              class="font-bold uppercase text-red2 max-tablet:text-[1.125rem] max-mobile:text-[0.625rem] max-mobile:tracking-[2.5px] mobile:tracking-[5.25px] tablet:text-[1.313rem]"
             >
               фирменный магазин
             </h3>
 
             <p
-              class="font-montserrat max-mobile:pt-[12px] max-mobile:text-[8px] max-mobile:leading-[14px] mobile:pt-[27px] mobile:text-[11px] mobile:leading-[20px]"
+              class="font-montserrat max-mobile:pt-[0.75rem] max-mobile:text-[0.5rem] max-mobile:leading-[0.875rem] mobile:pt-[27px] mobile:text-[0.688rem] mobile:leading-[1.25rem]"
             >
               Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский
               набор слов, но это не совсем так. Его корни уходят в один фрагмент
@@ -608,7 +615,7 @@
             </p>
 
             <div
-              class="flex flex-col gap-[15px] font-montserrat text-[14px] leading-[20px] max-mobile:hidden max-mobile:pt-[12px] mobile:pt-[27px]"
+              class="flex flex-col gap-[0.938rem] font-montserrat text-[0.875rem] leading-[1.25rem] max-mobile:hidden max-mobile:pt-[0.75rem] mobile:pt-[27px]"
             >
               <span>Малая Бронная 24с3</span>
 
@@ -638,22 +645,22 @@
       />
 
       <div
-        class="absolute text-red2 max-laptop:right-[20%] max-tablet:right-[3%] max-tablet:top-[16px] max-mobile:right-[10%] max-mobile:max-w-[95px] mobile:max-w-[200px] tablet:top-1/2 tablet:translate-y-[-40%] laptop:right-[17%]"
+        class="absolute text-red2 max-laptop:right-[20%] max-tablet:right-[3%] max-tablet:top-[1rem] max-mobile:right-[10%] max-mobile:max-w-[5.938rem] mobile:max-w-[12.5rem] tablet:top-1/2 tablet:translate-y-[-40%] laptop:right-[17%]"
       >
         <h3
-          class="font-bold uppercase max-laptop:text-[16px] max-laptop:tracking-[4px] max-tablet:mb-[10px] max-mobile:text-[8px] max-mobile:tracking-[2px] tablet:mb-[21px] laptop:text-[21px] laptop:tracking-[5.25px]"
+          class="font-bold uppercase max-laptop:text-[1rem] max-laptop:tracking-[0.25rem] max-tablet:mb-[0.625rem] max-mobile:text-[0.5rem] max-mobile:tracking-[2px] tablet:mb-[1.313rem] laptop:text-[1.313rem] laptop:tracking-[5.25px]"
         >
           Подарочные карты
         </h3>
 
         <p
-          class="font-montserrat max-laptop:text-[14px] max-tablet:mb-[10px] max-mobile:text-[8px] tablet:mb-[40px]"
+          class="font-montserrat max-laptop:text-[0.875rem] max-tablet:mb-[0.625rem] max-mobile:text-[0.5rem] tablet:mb-[2.5rem]"
         >
           Идеальный подарок на любой праздник!
         </p>
 
         <button
-          class="max-w-[10.625rem] rounded-[34px] border-red2 font-montserrat uppercase max-tablet:h-[16px] max-tablet:w-[72px] max-tablet:border-[0.5px] max-tablet:text-[8px] max-tablet:font-light tablet:h-11 tablet:w-full tablet:border-[1px] tablet:text-[0.75rem] tablet:font-bold tablet:tracking-[3px]"
+          class="max-w-[10.625rem] rounded-[34px] border-red2 font-montserrat uppercase max-tablet:h-[1rem] max-tablet:w-[4.5rem] max-tablet:border-[0.5px] max-tablet:text-[0.5rem] max-tablet:font-light tablet:h-11 tablet:w-full tablet:border-[1px] tablet:text-[0.75rem] tablet:font-bold tablet:tracking-[3px]"
         >
           подарить
         </button>
@@ -662,11 +669,11 @@
     <!-- /Подарочные карты -->
 
     <!-- Выбор стилиста -->
-    <section class="pb-[55px] pt-[31px]">
+    <section class="pb-[3.438rem] pt-[1.938rem]">
       <div class="mx-auto my-0 max-w-[955px] px-4">
         <div class="flex justify-between gap-3">
           <div
-            class="flex flex-col items-center gap-[35px] max-mobile:gap-[15px] max-mobile:px-[35px]"
+            class="flex flex-col items-center gap-[2.188rem] max-mobile:gap-[0.938rem] max-mobile:px-[2.188rem]"
           >
             <div class="relative">
               <img
@@ -676,13 +683,13 @@
               />
 
               <span
-                class="absolute left-1/2 top-1/2 block translate-x-[-50%] translate-y-[-50%] text-center font-extrabold uppercase text-red max-tablet:max-w-[50px] max-tablet:text-[10px] max-tablet:leading-[16px] max-mobile:max-w-[34px] max-mobile:text-[5px] max-mobile:leading-[10px] tablet:max-w-[95px] tablet:leading-[26px]"
+                class="absolute left-1/2 top-1/2 block translate-x-[-50%] translate-y-[-50%] text-center font-extrabold uppercase text-red max-tablet:max-w-[3.125rem] max-tablet:text-[0.625rem] max-tablet:leading-[1rem] max-mobile:max-w-[34px] max-mobile:text-[5px] max-mobile:leading-[0.625rem] tablet:max-w-[5.938rem] tablet:leading-[1.625rem]"
                 >choice of stylist</span
               >
             </div>
 
             <button
-              class="max-w-[10.625rem] rounded-[34px] bg-red2 font-montserrat text-[0.75rem] font-bold uppercase text-primary max-mobile:h-[18px] max-mobile:w-[60px] max-mobile:text-[8px] max-mobile:font-light max-mobile:tracking-[0.5px] mobile:h-11 mobile:w-full mobile:tracking-[3px]"
+              class="max-w-[10.625rem] rounded-[34px] bg-red2 font-montserrat text-[0.75rem] font-bold uppercase text-primary max-mobile:h-[1.125rem] max-mobile:w-[3.75rem] max-mobile:text-[0.5rem] max-mobile:font-light max-mobile:tracking-[0.5px] mobile:h-11 mobile:w-full mobile:tracking-[3px]"
             >
               Купить
             </button>
