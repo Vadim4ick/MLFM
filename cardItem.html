@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка товара</title>
+
+    <!-- Стили свайпер -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- /Стили свайпер -->
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- /Стили -->
+
+    <!-- Шрифты -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Unbounded:200,300,regular,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- /Шрифты -->
+
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- /tailwind CDN -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              secondary: "#B41C21",
+              primary: "#ffffff",
+              third: "#F4EAC8",
+
+              red: "#CD3836",
+              red2: "#A42D2A",
+            },
+            gridTemplateColumns: {
+              newItems: "repeat(4, 1fr)",
+              buyImage: "1.35fr 0.55fr",
+              buyImageMobile: "1fr 100px",
+              catalogItem: "1fr 410px",
+            },
+
+            fontFamily: {
+              main: ["Unbounded"],
+              montserrat: ["Montserrat"],
+            },
+
+            screens: {
+              mobile: "460px",
+              tablet: "768px",
+              laptop: "1024px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Карточка товара -->
+    <section class="pt-[78px]">
+      <div
+        class="laptop:mx-auto laptop:my-0 laptop:max-w-[1155px] laptop:px-[16px]"
+      >
+        <article
+          class="laptop:grid-cols-catalogItem max-laptop:flex max-laptop:flex-col max-tablet:gap-4 tablet:gap-7 laptop:grid"
+        >
+          <div class="cardItem__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="w-full"
+                  src="./public/img/catalogItem/1.png"
+                  srcset="./public/img/catalogItem/1@2x.png 2x"
+                  alt="1.png"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col max-laptop:px-[16px] max-tablet:gap-[12px] tablet:gap-[32px]"
+          >
+            <div
+              class="gap-2 text-[10px] text-primary max-tablet:flex tablet:hidden"
+            >
+              <span class="rounded-[17px] bg-red2 px-[5px] py-[7px]">NEW</span>
+            </div>
+
+            <h3
+              class="max-tablet:font-light tablet:text-[32px] tablet:font-extralight"
+            >
+              SUSAN
+            </h3>
+
+            <div class="flex flex-col max-tablet:gap-[12px] tablet:gap-4">
+              <div
+                class="flex flex-col max-tablet:gap-[12px] max-tablet:text-[10px] tablet:gap-4 tablet:text-[12px]"
+              >
+                <span>Категория: Брошь</span>
+                <span>Цвет: Золотой </span>
+              </div>
+
+              <div class="flex flex-col max-tablet:gap-[12px] tablet:gap-2">
+                <span class="max-tablet:text-[10px] tablet:text-[12px]"
+                  >Размер:</span
+                >
+
+                <!-- radio кнопки! -->
+                <div class="flex max-tablet:gap-[12px] tablet:gap-2">
+                  <label class="inline-flex cursor-pointer items-center">
+                    <input
+                      type="radio"
+                      name="size"
+                      value="6"
+                      class="hidden"
+                      onchange="updateStyle(this)"
+                    />
+
+                    <span
+                      class="flex items-center justify-center rounded-full border border-black bg-white text-black max-tablet:min-h-[20px] max-tablet:min-w-[55px] max-tablet:text-[10px] tablet:min-h-[32px] tablet:min-w-[95px]"
+                      id="option-6"
+                      >6</span
+                    >
+                  </label>
+
+                  <label class="inline-flex cursor-pointer items-center">
+                    <input
+                      type="radio"
+                      name="size"
+                      value="7"
+                      class="hidden"
+                      onchange="updateStyle(this)"
+                    />
+
+                    <span
+                      class="flex items-center justify-center rounded-full bg-black text-white max-tablet:min-h-[20px] max-tablet:min-w-[55px] max-tablet:text-[10px] tablet:min-h-[32px] tablet:min-w-[95px]"
+                      id="option-7"
+                      >7</span
+                    >
+                  </label>
+                </div>
+                <!-- /radio кнопки! -->
+
+                <a
+                  href="javascript:void(0)"
+                  class="text-[10px] text-[#505050] underline tablet:hidden"
+                  >Руководсто по размерам</a
+                >
+              </div>
+            </div>
+
+            <span class="max-tablet:text-[10px] tablet:text-[14px]"
+              >Цена: ₽ 12,000</span
+            >
+
+            <!-- Кнопки "Добавить" -->
+            <div
+              class="flex flex-col max-tablet:my-[20px] max-tablet:gap-[16px] tablet:gap-[21px]"
+            >
+              <button
+                class="w-full rounded-[34px] bg-red2 text-primary max-tablet:min-h-[32px] max-tablet:text-[10px] tablet:min-h-[53px]"
+              >
+                Добавить в корзину
+              </button>
+              <button
+                class="w-full rounded-[34px] border-[1px] border-[#000] max-tablet:min-h-[32px] max-tablet:text-[10px] tablet:min-h-[53px]"
+              >
+                Добавить в избранное
+              </button>
+            </div>
+            <!-- /Кнопки "Добавить" -->
+
+            <!-- Спойлеры -->
+            <div class="flex flex-col max-tablet:gap-[12px] tablet:gap-[20px]">
+              <div
+                class="flex flex-col items-start text-[10px] max-tablet:gap-[20px] tablet:gap-[10px]"
+              >
+                <div class="flex w-full items-center justify-between">
+                  <button type="button">Доставка</button>
+
+                  <button>
+                    <svg
+                      width="13"
+                      height="8"
+                      viewBox="0 0 13 8"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M6.09766 0.625C5.86523 0.625 5.66699 0.713867 5.48926 0.891602L0.273438 6.22363C0.123047 6.37402 0.0478516 6.55859 0.0478516 6.77734C0.0478516 7.22168 0.389648 7.57715 0.833984 7.57715C1.05273 7.57715 1.25098 7.48828 1.4082 7.33789L6.09766 2.52539L10.7871 7.33789C10.9375 7.48145 11.1357 7.57715 11.3545 7.57715C11.8057 7.57715 12.1475 7.22168 12.1475 6.77734C12.1475 6.55859 12.0723 6.37402 11.9219 6.22363L6.70605 0.891602C6.52832 0.707031 6.33008 0.625 6.09766 0.625Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div
+                  class="leading-[16px] max-tablet:font-extralight tablet:font-light"
+                >
+                  SUSAN — это украшения для тех, кто любит моду. Каждый сезон
+                  дизайнеры бренда адаптируют подиумные и стритстайл-тренды в
+                  своих коллекциях.
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col items-start text-[10px] max-tablet:gap-[20px] tablet:gap-[10px]"
+              >
+                <div class="flex w-full items-center justify-between">
+                  <button type="button">Доставка</button>
+
+                  <button>
+                    <svg
+                      width="13"
+                      height="8"
+                      viewBox="0 0 13 8"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M6.09766 0.625C5.86523 0.625 5.66699 0.713867 5.48926 0.891602L0.273438 6.22363C0.123047 6.37402 0.0478516 6.55859 0.0478516 6.77734C0.0478516 7.22168 0.389648 7.57715 0.833984 7.57715C1.05273 7.57715 1.25098 7.48828 1.4082 7.33789L6.09766 2.52539L10.7871 7.33789C10.9375 7.48145 11.1357 7.57715 11.3545 7.57715C11.8057 7.57715 12.1475 7.22168 12.1475 6.77734C12.1475 6.55859 12.0723 6.37402 11.9219 6.22363L6.70605 0.891602C6.52832 0.707031 6.33008 0.625 6.09766 0.625Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div
+                  class="leading-[16px] max-tablet:font-extralight tablet:font-light"
+                >
+                  SUSAN — это украшения для тех, кто любит моду. Каждый сезон
+                  дизайнеры бренда адаптируют подиумные и стритстайл-тренды в
+                  своих коллекциях.
+                </div>
+              </div>
+            </div>
+            <!-- /Спойлеры -->
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- /Карточка товара -->
+
+    <!-- JS логика по radio-кнопкам -->
+    <script>
+      function updateStyle(input) {
+        const id = "option-" + input.value;
+        const labels = document.querySelectorAll('[id^="option-"]');
+        labels.forEach((label) => {
+          label.classList.remove("text-white", "bg-black");
+          label.classList.add(
+            "text-black",
+            "bg-white",
+            "border",
+            "border-black",
+          );
+        });
+        document
+          .getElementById(id)
+          .classList.remove("text-black", "bg-white", "border", "border-black");
+        document.getElementById(id).classList.add("text-white", "bg-black");
+      }
+    </script>
+    <!-- /JS логика по radio-кнопкам -->
+
+    <!-- Initialize Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="./js/swiper.js"></script>
+    <!-- /Swiper JS -->
+    <!-- /Initialize Swiper -->
+  </body>
+</html>

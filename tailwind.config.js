@@ -31,6 +31,7 @@ module.exports = {
         newItems: "repeat(4, 1fr)",
         buyImage: "1.35fr 0.55fr",
         buyImageMobile: "1fr 100px",
+        catalogItem: "1fr 410px",
       },
       fontFamily: {
         main: ["Unbounded"],
