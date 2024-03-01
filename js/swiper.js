@@ -1,3 +1,4 @@
+// HOME PAGE SWIPERS
 const swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-mainBanner-pagination",
@@ -62,3 +63,34 @@ if (window.matchMedia("(max-width: 1024px)").matches) {
     },
   });
 }
+// /HOME PAGE SWIPERS
+
+// ==============================================================
+
+// CardItem PAGE SWIPERS
+const swiperCardItem = new Swiper(".cardItem__slider", {
+  spaceBetween: 20,
+  speed: 700,
+});
+
+if (window.matchMedia("(max-width: 1024px)").matches) {
+  const swiperSimilarProducts = new Swiper(".swiper-similarProducts", {
+    speed: 700,
+    slidesPerView: 3,
+    spaceBetween: 20,
+
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
+  });
+}
+// /CardItem PAGE SWIPERS
+
+// ==============================================================

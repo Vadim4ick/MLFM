@@ -74,8 +74,16 @@
         <article
           class="laptop:grid-cols-catalogItem max-laptop:flex max-laptop:flex-col max-tablet:gap-4 tablet:gap-7 laptop:grid"
         >
-          <div class="cardItem__slider">
+          <div class="cardItem__slider overflow-hidden">
             <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="w-full"
+                  src="./public/img/catalogItem/1.png"
+                  srcset="./public/img/catalogItem/1@2x.png 2x"
+                  alt="1.png"
+                />
+              </div>
               <div class="swiper-slide">
                 <img
                   class="w-full"
@@ -246,6 +254,340 @@
       </div>
     </section>
     <!-- /Карточка товара -->
+
+    <!-- Похожие товары -->
+    <section
+      class="max-laptop:pb-[60px] max-tablet:pt-[32px] tablet:pt-[116px] laptop:pb-[200px]"
+    >
+      <div class="mx-auto my-0 max-w-[1295px] px-3">
+        <h4
+          class="pb-[32px] text-[0.875rem] max-mobile:text-[10px] mobile:text-center mobile:font-bold mobile:tracking-[0.25rem]"
+        >
+          похожие товары
+        </h4>
+
+        <div class="swiper-similarProducts overflow-hidden">
+          <div
+            class="swiper-wrapper laptop:grid laptop:grid-cols-newItems laptop:gap-[30px]"
+          >
+            <div class="swiper-slide">
+              <article>
+                <div class="relative">
+                  <img
+                    class="w-full max-tablet:aspect-[136/165]"
+                    src="./public/img/newItems/1.png"
+                    srcset="./public/img/newItems/1@2x.png 2x"
+                    alt="1.png"
+                  />
+
+                  <svg
+                    class="absolute right-[8px] top-[10px]"
+                    width="18.430664"
+                    height="16.285156"
+                    viewBox="0 0 18.4307 16.2852"
+                    fill="none"
+                  >
+                    <path
+                      id="Vector 15"
+                      d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
+                      stroke="#222222"
+                      stroke-opacity="1.000000"
+                      stroke-width="1.000000"
+                    />
+                  </svg>
+                </div>
+
+                <div
+                  class="flex flex-col gap-[0.5rem] pt-5 text-[14px] font-medium max-tablet:pt-[4px] max-tablet:text-[10px]"
+                >
+                  <p>Жакет Red</p>
+
+                  <span>32,000 ₽</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article>
+                <div class="relative">
+                  <img
+                    class="w-full max-tablet:aspect-[136/165]"
+                    src="./public/img/newItems/2.png"
+                    srcset="./public/img/newItems/2@2x.png 2x"
+                    alt="2.png"
+                  />
+
+                  <svg
+                    class="absolute right-[8px] top-[10px]"
+                    width="18.430664"
+                    height="16.285156"
+                    viewBox="0 0 18.4307 16.2852"
+                    fill="none"
+                  >
+                    <path
+                      id="Vector 15"
+                      d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
+                      stroke="#222222"
+                      stroke-opacity="1.000000"
+                      stroke-width="1.000000"
+                    />
+                  </svg>
+                </div>
+
+                <div
+                  class="flex flex-col gap-[0.5rem] pt-5 text-[14px] font-medium max-tablet:pt-[4px] max-tablet:text-[10px]"
+                >
+                  <p>Жакет Red</p>
+
+                  <span>32,000 ₽</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article>
+                <div class="relative">
+                  <img
+                    class="w-full max-tablet:aspect-[136/165]"
+                    src="./public/img/newItems/3.png"
+                    srcset="./public/img/newItems/3@2x.png 2x"
+                    alt="3.png"
+                  />
+
+                  <svg
+                    class="absolute right-[8px] top-[10px]"
+                    width="18.430664"
+                    height="16.285156"
+                    viewBox="0 0 18.4307 16.2852"
+                    fill="none"
+                  >
+                    <path
+                      id="Vector 15"
+                      d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
+                      stroke="#222222"
+                      stroke-opacity="1.000000"
+                      stroke-width="1.000000"
+                    />
+                  </svg>
+                </div>
+
+                <div
+                  class="flex flex-col gap-[0.5rem] pt-5 text-[14px] font-medium max-tablet:pt-[4px] max-tablet:text-[10px]"
+                >
+                  <p>Жакет Red</p>
+
+                  <span>32,000 ₽</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article>
+                <div class="relative">
+                  <img
+                    class="w-full max-tablet:aspect-[136/165]"
+                    src="./public/img/newItems/4.png"
+                    srcset="./public/img/newItems/4@2x.png 2x"
+                    alt="4.png"
+                  />
+
+                  <svg
+                    class="absolute right-[8px] top-[10px]"
+                    width="18.430664"
+                    height="16.285156"
+                    viewBox="0 0 18.4307 16.2852"
+                    fill="none"
+                  >
+                    <path
+                      id="Vector 15"
+                      d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
+                      stroke="#222222"
+                      stroke-opacity="1.000000"
+                      stroke-width="1.000000"
+                    />
+                  </svg>
+                </div>
+
+                <div
+                  class="flex flex-col gap-[0.5rem] pt-5 text-[14px] font-medium max-tablet:pt-[4px] max-tablet:text-[10px]"
+                >
+                  <p>Жакет Red</p>
+
+                  <span>32,000 ₽</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Похожие товары -->
+
+    <!-- С этим товаром покупают -->
+    <section class="max-laptop:pb-[60px] laptop:pb-[200px]">
+      <div class="mx-auto my-0 max-w-[1295px] px-3">
+        <h4
+          class="pb-[32px] text-[0.875rem] max-mobile:text-[10px] mobile:text-center mobile:font-bold mobile:tracking-[0.25rem]"
+        >
+          с этим товаром покупают
+        </h4>
+
+        <div class="swiper-similarProducts overflow-hidden">
+          <div
+            class="swiper-wrapper laptop:grid laptop:grid-cols-newItems laptop:gap-[30px]"
+          >
+            <div class="swiper-slide">
+              <article>
+                <div class="relative">
+                  <img
+                    class="w-full max-tablet:aspect-[136/165]"
+                    src="./public/img/newItems/1.png"
+                    srcset="./public/img/newItems/1@2x.png 2x"
+                    alt="1.png"
+                  />
+
+                  <svg
+                    class="absolute right-[8px] top-[10px]"
+                    width="18.430664"
+                    height="16.285156"
+                    viewBox="0 0 18.4307 16.2852"
+                    fill="none"
+                  >
+                    <path
+                      id="Vector 15"
+                      d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
+                      stroke="#222222"
+                      stroke-opacity="1.000000"
+                      stroke-width="1.000000"
+                    />
+                  </svg>
+                </div>
+
+                <div
+                  class="flex flex-col gap-[0.5rem] pt-5 text-[14px] font-medium max-tablet:pt-[4px] max-tablet:text-[10px]"
+                >
+                  <p>Жакет Red</p>
+
+                  <span>32,000 ₽</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article>
+                <div class="relative">
+                  <img
+                    class="w-full max-tablet:aspect-[136/165]"
+                    src="./public/img/newItems/2.png"
+                    srcset="./public/img/newItems/2@2x.png 2x"
+                    alt="2.png"
+                  />
+
+                  <svg
+                    class="absolute right-[8px] top-[10px]"
+                    width="18.430664"
+                    height="16.285156"
+                    viewBox="0 0 18.4307 16.2852"
+                    fill="none"
+                  >
+                    <path
+                      id="Vector 15"
+                      d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
+                      stroke="#222222"
+                      stroke-opacity="1.000000"
+                      stroke-width="1.000000"
+                    />
+                  </svg>
+                </div>
+
+                <div
+                  class="flex flex-col gap-[0.5rem] pt-5 text-[14px] font-medium max-tablet:pt-[4px] max-tablet:text-[10px]"
+                >
+                  <p>Жакет Red</p>
+
+                  <span>32,000 ₽</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article>
+                <div class="relative">
+                  <img
+                    class="w-full max-tablet:aspect-[136/165]"
+                    src="./public/img/newItems/3.png"
+                    srcset="./public/img/newItems/3@2x.png 2x"
+                    alt="3.png"
+                  />
+
+                  <svg
+                    class="absolute right-[8px] top-[10px]"
+                    width="18.430664"
+                    height="16.285156"
+                    viewBox="0 0 18.4307 16.2852"
+                    fill="none"
+                  >
+                    <path
+                      id="Vector 15"
+                      d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
+                      stroke="#222222"
+                      stroke-opacity="1.000000"
+                      stroke-width="1.000000"
+                    />
+                  </svg>
+                </div>
+
+                <div
+                  class="flex flex-col gap-[0.5rem] pt-5 text-[14px] font-medium max-tablet:pt-[4px] max-tablet:text-[10px]"
+                >
+                  <p>Жакет Red</p>
+
+                  <span>32,000 ₽</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article>
+                <div class="relative">
+                  <img
+                    class="w-full max-tablet:aspect-[136/165]"
+                    src="./public/img/newItems/4.png"
+                    srcset="./public/img/newItems/4@2x.png 2x"
+                    alt="4.png"
+                  />
+
+                  <svg
+                    class="absolute right-[8px] top-[10px]"
+                    width="18.430664"
+                    height="16.285156"
+                    viewBox="0 0 18.4307 16.2852"
+                    fill="none"
+                  >
+                    <path
+                      id="Vector 15"
+                      d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
+                      stroke="#222222"
+                      stroke-opacity="1.000000"
+                      stroke-width="1.000000"
+                    />
+                  </svg>
+                </div>
+
+                <div
+                  class="flex flex-col gap-[0.5rem] pt-5 text-[14px] font-medium max-tablet:pt-[4px] max-tablet:text-[10px]"
+                >
+                  <p>Жакет Red</p>
+
+                  <span>32,000 ₽</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /С этим товаром покупают -->
 
     <!-- JS логика по radio-кнопкам -->
     <script>
