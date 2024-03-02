@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-in</title>
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- /Стили -->
+
+    <!-- Шрифты -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Unbounded:200,300,regular,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:regular,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- /Шрифты -->
+
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- /tailwind CDN -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              secondary: "#B41C21",
+              primary: "#ffffff",
+              third: "#F4EAC8",
+              gray: "#c5c5c5",
+
+              red: "#CD3836",
+              red2: "#A42D2A",
+            },
+            gridTemplateColumns: {
+              newItems: "repeat(4, 1fr)",
+              buyImage: "1.35fr 0.55fr",
+              buyImageMobile: "1fr 100px",
+              catalogItem: "1fr 410px",
+              aside: "275px 1fr",
+            },
+
+            fontFamily: {
+              main: ["Unbounded"],
+              montserrat: ["Montserrat"],
+              roboto: ["Roboto"],
+              inter: ["Inter"],
+            },
+
+            screens: {
+              mobile: "460px",
+              tablet: "768px",
+              laptop: "1024px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section class="pt-[64px]">
+      <div class="mx-auto max-w-[480px] px-4">
+        <h1
+          class="pb-[32px] text-center max-tablet:text-[24px] tablet:text-5xl"
+        >
+          Войти
+        </h1>
+
+        <form class="flex flex-col max-tablet:gap-4 tablet:gap-[24px]">
+          <input
+            class="w-full border-[1px] border-[#000] p-[12px] font-light max-tablet:h-[30px] max-tablet:rounded-[20px] max-tablet:py-[5px] max-tablet:text-[10px] tablet:h-[43px] tablet:rounded-[30px] tablet:text-[14px]"
+            type="text"
+            placeholder="Логин"
+          />
+
+          <input
+            class="w-full border-[1px] border-[#000] p-[12px] font-light max-tablet:h-[30px] max-tablet:rounded-[20px] max-tablet:py-[5px] max-tablet:text-[10px] tablet:h-[43px] tablet:rounded-[30px] tablet:text-[14px]"
+            type="text"
+            placeholder="Пароль"
+          />
+
+          <button
+            class="bg-red2 text-primary max-tablet:min-h-[30px] max-tablet:rounded-[20px] max-tablet:text-[10px] tablet:min-h-[45px] tablet:rounded-[30px]"
+          >
+            Войти
+          </button>
+        </form>
+
+        <div
+          class="relative pt-[32px] text-[12px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#000000] after:content-[''] tablet:hidden"
+        ></div>
+
+        <div class="mt-[24px] w-full text-center">
+          <a
+            href="javascript:void(0)"
+            class="text-[14px] font-extralight underline"
+          >
+            Забыли пароль?
+          </a>
+        </div>
+
+        <div
+          class="flex justify-center gap-1 pt-[32px] text-[10px] font-extralight"
+        >
+          <span>У вас нет учетной записи?</span>
+
+          <a href="javascript:void(0)" class="underline">Зарегистрироваться</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

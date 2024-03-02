@@ -23,6 +23,7 @@ module.exports = {
         secondary: "#B41C21",
         primary: "#ffffff",
         third: "#F4EAC8",
+        gray: "#c5c5c5",
 
         red: "#CD3836",
         red2: "#A42D2A",
@@ -32,6 +33,7 @@ module.exports = {
         buyImage: "1.35fr 0.55fr",
         buyImageMobile: "1fr 100px",
         catalogItem: "1fr 410px",
+        aside: "275px 1fr",
       },
       fontFamily: {
         main: ["Unbounded"],

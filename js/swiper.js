@@ -94,3 +94,75 @@ if (window.matchMedia("(max-width: 1024px)").matches) {
 // /CardItem PAGE SWIPERS
 
 // ==============================================================
+
+if (window.matchMedia("(max-width: 1024px)").matches) {
+  const swiperSimilarProducts = new Swiper(".swiper-catalogItems", {
+    speed: 700,
+    slidesPerView: 3,
+    spaceBetween: 20,
+
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
+  });
+  const swiperSimilarProducts2 = new Swiper(".swiper-catalogItems2", {
+    speed: 700,
+    slidesPerView: 3,
+    spaceBetween: 20,
+
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
+  });
+
+  const swiperSimilarProducts3 = new Swiper(".swiper-catalogItems3", {
+    speed: 700,
+    slidesPerView: 3,
+    spaceBetween: 20,
+
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
+  });
+
+  const swiperSimilarProducts4 = new Swiper(".swiper-catalogItems4", {
+    speed: 700,
+    slidesPerView: 3,
+    spaceBetween: 20,
+
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
+  });
+}
+// /CardItem PAGE SWIPERS
+
+// ==============================================================
