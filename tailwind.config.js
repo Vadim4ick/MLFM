@@ -47,6 +47,11 @@ module.exports = {
         inter: ["Inter"],
       },
 
+      container: {
+        center: true,
+        padding: "1rem",
+      },
+
       screens: {
         mobile: "460px",
         tablet: "768px",
