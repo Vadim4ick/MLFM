@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корзина</title>
+
+    <!-- Стили свайпер -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- /Стили свайпер -->
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- /Стили -->
+
+    <!-- Шрифты -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Unbounded:200,300,regular,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:regular,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- /Шрифты -->
+
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- /tailwind CDN -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              secondary: "#B41C21",
+              primary: "#ffffff",
+              third: "#F4EAC8",
+              gray: "#c5c5c5",
+
+              red: "#CD3836",
+              red2: "#A42D2A",
+            },
+            gridTemplateColumns: {
+              newItems: "repeat(4, 1fr)",
+              buyImage: "1.35fr 0.55fr",
+              buyImageMobile: "1fr 100px",
+              catalogItem: "1fr 410px",
+              aside: "275px 1fr",
+              delivery: "49% 51%",
+            },
+
+            fontFamily: {
+              main: ["Unbounded"],
+              montserrat: ["Montserrat"],
+              roboto: ["Roboto"],
+              inter: ["Inter"],
+            },
+
+            screens: {
+              mobile: "460px",
+              tablet: "768px",
+              laptop: "1024px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- УДАЛИТЬ! ДЛЯ ТЕСТА ИСПОЛЬЗУЮ -->
+    <section class="h-screen w-screen">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita
+      voluptatibus ad doloribus sequi maiores debitis sed, aliquid, officiis
+      quisquam eius nemo impedit ducimus fugiat id hic praesentium repellat
+      perferendis atque veritatis? Dignissimos laborum ipsa nostrum ducimus
+      dolorum. Corporis dicta debitis libero officia ducimus, perspiciatis neque
+      eveniet rem quis esse quas sunt nostrum quam suscipit perferendis vel
+      impedit, facilis accusantium earum recusandae natus vitae quae soluta.
+      Molestias laudantium, quod harum quaerat adipisci unde hic recusandae
+      obcaecati porro ea similique molestiae assumenda excepturi! Vero eos earum
+      reiciendis distinctio odit quidem repellat, labore accusantium dolorem.
+      Veritatis sint corrupti quos eos dolorum. Repellendus quisquam quia nam
+      quos enim! Hic, quo quibusdam officiis soluta tempora sapiente. Vel optio
+      ex sunt, consectetur doloremque necessitatibus nostrum quos dignissimos
+      incidunt esse reiciendis, omnis repellat libero nulla. Praesentium vero
+      soluta optio sed commodi mollitia ipsam aliquid amet quis beatae autem hic
+      quidem, quo sint doloremque odio voluptatem temporibus debitis qui veniam
+      iusto alias. Accusamus voluptate nihil animi qui velit sit voluptatem,
+      facilis assumenda labore, minima non ducimus voluptas impedit eius,
+      officiis error aliquid dolores veniam reprehenderit blanditiis nobis.
+      Beatae, velit? Quas veritatis dignissimos voluptatem tenetur! Eum iure,
+      cupiditate nobis ipsum suscipit esse ab unde voluptatibus labore tenetur
+      totam magnam architecto corporis et debitis asperiores non! Quod
+      repellendus ab architecto ipsa aperiam reiciendis quos porro, cumque,
+      magnam doloremque delectus ut sed ducimus debitis ipsum perferendis
+      corrupti. Dicta, accusantium? Eos odio est et quisquam aliquid mollitia
+      itaque dicta velit maxime consectetur omnis amet rem voluptatibus cum,
+      sunt nobis, voluptatum laborum recusandae inventore incidunt voluptatem.
+      Cum, deleniti eos nobis qui error odio porro assumenda aspernatur maxime
+      culpa excepturi dolor dolores, labore provident doloribus corporis illo
+      obcaecati impedit sunt quisquam nisi beatae perferendis deserunt vero!
+      Placeat cumque nemo ad? Minus consequatur velit delectus, error culpa
+      cumque vero possimus facere nihil enim sed. Perspiciatis numquam repellat
+      sed labore saepe iste a possimus, ut nobis excepturi perferendis dolor,
+      est nulla totam autem voluptatum unde soluta accusamus. Saepe temporibus
+      facere excepturi animi ipsa, deserunt consequatur rem veritatis dolorem
+      odio ducimus, ad provident officia. Aspernatur harum iure consequatur
+      dignissimos delectus architecto adipisci reprehenderit accusamus aperiam
+      soluta ipsam quas at doloribus nemo aliquam praesentium rerum distinctio
+      illum, animi neque quasi itaque! Expedita veritatis debitis eveniet quas
+      consectetur ducimus dolorum deleniti, et sequi aspernatur vero, nesciunt
+      recusandae sint. Aut nemo sint nisi in. Eligendi delectus corrupti, quod
+      debitis et dolorem eos, ea, nulla commodi consectetur vel earum qui dolor
+      incidunt? Perferendis, nam inventore numquam reprehenderit voluptate optio
+      voluptatum aspernatur iure hic enim adipisci debitis qui maiores nisi
+      aperiam sapiente veritatis nobis esse asperiores eos itaque nulla
+      molestiae magnam mollitia? Labore deserunt, fugit, quos a accusantium
+      commodi eveniet veniam sint, vitae velit fuga. Sed rerum distinctio
+      placeat id, minus corrupti tempore. Nostrum sed eligendi delectus sunt
+      vero debitis autem laudantium amet exercitationem obcaecati, nobis
+      repudiandae ipsum quisquam voluptas culpa illo consequuntur explicabo
+      assumenda fugit ullam facere ab placeat necessitatibus. Maxime dolorum
+      totam laborum voluptatem. Dolor eius magnam maiores ipsa eligendi,
+    </section>
+    <!-- /УДАЛИТЬ! ДЛЯ ТЕСТА ИСПОЛЬЗУЮ -->
+
+    <section
+      class="absolute right-0 top-0 z-10 h-full w-full overflow-scroll bg-primary pb-[40px] pt-[40px] tablet:max-w-[505px]"
+    >
+      <div class="mx-auto px-4 tablet:max-w-[457px]">
+        <h3
+          class="relative pb-[20px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#B1B1B1] after:content-[''] max-tablet:text-[14px]"
+        >
+          Корзина / 2 шт.
+        </h3>
+
+        <!--  Товары -->
+        <div
+          class="flex flex-col font-montserrat max-tablet:gap-[30px] max-tablet:py-[30px] tablet:gap-[20px] tablet:pb-[55px] tablet:pt-[45px]"
+        >
+          <article class="flex max-mobile:gap-[10px] mobile:gap-[15px]">
+            <img
+              src="public/img/delivery/1.png"
+              src="public/img/delivery/1@2x.png 2x"
+              alt="1.png"
+              class="object-cover max-mobile:h-[100px] max-mobile:w-[61px] max-mobile:w-[90px] mobile:h-[100px]"
+            />
+
+            <div class="flex w-full items-center justify-between">
+              <div class="flex flex-col gap-1">
+                <span class="text-[10px]">Подвеска</span>
+
+                <p class="text-[10px] font-medium">Undi</p>
+
+                <span class="text-[8px] opacity-50">1 шт</span>
+              </div>
+
+              <span class="text-[10px]">12,000 ₽</span>
+            </div>
+          </article>
+
+          <article class="flex max-mobile:gap-[10px] mobile:gap-[15px]">
+            <img
+              src="public/img/delivery/1.png"
+              src="public/img/delivery/1@2x.png 2x"
+              alt="1.png"
+              class="object-cover max-mobile:h-[100px] max-mobile:w-[61px] max-mobile:w-[90px] mobile:h-[100px]"
+            />
+
+            <div class="flex w-full items-center justify-between">
+              <div class="flex flex-col gap-1">
+                <span class="text-[10px]">Подвеска</span>
+
+                <p class="text-[10px] font-medium">Undi</p>
+
+                <span class="text-[8px] opacity-50">1 шт</span>
+              </div>
+
+              <span class="text-[10px]">12,000 ₽</span>
+            </div>
+          </article>
+        </div>
+        <!--  /Товары -->
+
+        <!--  Стоимость товаров -->
+        <div
+          class="flex items-center justify-between text-[10px] max-tablet:pb-[30px] tablet:pb-3"
+        >
+          <p>Стоимость товаров</p>
+
+          <span>24,000₽</span>
+        </div>
+        <!--  /Стоимость товаров -->
+
+        <!--  Промокод -->
+        <div
+          class="relative flex items-center gap-4 font-roboto after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#B1B1B1] after:content-[''] max-tablet:pb-[30px] tablet:pb-[25px]"
+        >
+          <input
+            class="w-full border-[1px] border-[#000] px-[12px] font-light max-tablet:h-[30px] max-tablet:rounded-[20px] max-tablet:py-[5px] max-tablet:text-[10px] tablet:h-[48px] tablet:rounded-[30px] tablet:text-[14px]"
+            type="text"
+            placeholder="Промокод"
+          />
+
+          <button
+            class="border-[1px] border-[#000] px-[16px] max-tablet:h-[30px] max-tablet:rounded-[20px] max-tablet:rounded-[20px] max-tablet:py-[5px] max-tablet:text-[10px] tablet:h-[48px] tablet:rounded-[30px]"
+          >
+            Применить
+          </button>
+        </div>
+        <!--  /Промокод -->
+
+        <!--  Скидка/Итого -->
+        <div
+          class="relative flex flex-col gap-[14px] max-tablet:pt-[30px] tablet:pt-[16px]"
+        >
+          <div class="flex justify-between text-[10px] text-[#565656]">
+            <span>Скидка</span>
+
+            <span>-360₽</span>
+          </div>
+
+          <div class="flex justify-between text-[10px] font-medium">
+            <span>Итого</span>
+
+            <span>24,140₽</span>
+          </div>
+        </div>
+        <!--  /Скидка/Итого -->
+
+        <!--  Кнопка - Перейти к оплате -->
+        <button
+          class="w-full bg-red2 text-[10px] text-primary max-tablet:mt-[30px] max-tablet:min-h-[30px] max-tablet:rounded-[20px] tablet:mt-[20px] tablet:min-h-[37px] tablet:rounded-[30px] tablet:font-medium"
+        >
+          Перейти к оплате
+        </button>
+
+        <div
+          class="mx-auto max-w-[285px] text-center font-montserrat text-[8px] opacity-60 max-tablet:pt-[30px] tablet:pt-[10px]"
+        >
+          Сайт использует reCAPTCHA согласно
+          <a class="underline" href="javascript:void(0)"
+            >Политике конфиденциальности</a
+          >
+          и
+          <a class="underline" href="javascript:void(0)"
+            >Условиям обслуживания</a
+          >
+          Google.
+        </div>
+        <!--  /Кнопка - Перейти к оплате -->
+      </div>
+
+      <!--  Вас могут заинтересовать -->
+      <div
+        class="max-tablet:pl-4 max-tablet:pt-[30px] tablet:pl-[42px] tablet:pt-[55px]"
+      >
+        <h4 class="text-[12px] max-tablet:pb-[30px] tablet:pb-[18px]">
+          Вас могут заинтересовать
+        </h4>
+
+        <div class="interest__slider overflow-hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">
+                <img
+                  src="./public/img/basket/1.png"
+                  src="./public/img/basket/1@2x.png"
+                  alt="1.png"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">
+                <img
+                  src="./public/img/basket/1.png"
+                  src="./public/img/basket/1@2x.png"
+                  alt="1.png"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">
+                <img
+                  src="./public/img/basket/1.png"
+                  src="./public/img/basket/1@2x.png"
+                  alt="1.png"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">
+                <img
+                  src="./public/img/basket/1.png"
+                  src="./public/img/basket/1@2x.png"
+                  alt="1.png"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">
+                <img
+                  src="./public/img/basket/1.png"
+                  src="./public/img/basket/1@2x.png"
+                  alt="1.png"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">
+                <img
+                  src="./public/img/basket/1.png"
+                  src="./public/img/basket/1@2x.png"
+                  alt="1.png"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)">
+                <img
+                  src="./public/img/basket/1.png"
+                  src="./public/img/basket/1@2x.png"
+                  alt="1.png"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  /Вас могут заинтересовать -->
+    </section>
+
+    <div class="absolute left-0 top-0 h-full w-full bg-black opacity-40"></div>
+
+    <!-- Initialize Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="./js/swiper.js"></script>
+    <!-- /Swiper JS -->
+    <!-- /Initialize Swiper -->
+  </body>
+</html>

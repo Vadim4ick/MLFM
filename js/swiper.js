@@ -166,3 +166,28 @@ if (window.matchMedia("(max-width: 1024px)").matches) {
 // /CardItem PAGE SWIPERS
 
 // ==============================================================
+
+// Basket PAGE SWIPERS
+const swiperBasket = new Swiper(".interest__slider", {
+  speed: 700,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 2.7,
+      spaceBetween: 16,
+    },
+    460: {
+      slidesPerView: 3.5,
+      spaceBetween: 24,
+    },
+    600: {
+      slidesPerView: 4.3,
+    },
+    768: {
+      slidesPerView: 3.5,
+    },
+  },
+});
+// /Basket PAGE SWIPERS
+
+// ==============================================================
