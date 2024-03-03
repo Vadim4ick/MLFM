@@ -60,12 +60,13 @@
         theme: {
           extend: {
             colors: {
-              secondary: "#B41C21",
               primary: "#ffffff",
               third: "#F4EAC8",
               gray: "#c5c5c5",
-
-              red: "#CD3836",
+              gray2: "#B1B1B1",
+              grayLight: "#E5EAED",
+              darkGray: "#565656",
+              darkGray2: "#505050",
               red2: "#A42D2A",
             },
             gridTemplateColumns: {
@@ -103,7 +104,7 @@
             class="items-center justify-between gap-4 pb-[40px] pt-[70] max-laptop:flex laptop:hidden"
           >
             <button
-              class="flex h-[50px] w-full max-w-[250px] items-center justify-center gap-[10px] rounded-[12px] border-[1px] border-[#000] text-[10px] max-mobile:h-[28px]"
+              class="flex h-[50px] w-full max-w-[250px] items-center justify-center gap-[10px] rounded-[12px] border-[1px] border-black text-[10px] max-mobile:h-[28px]"
             >
               <svg
                 class="text-[#3B3B3B]"
@@ -129,7 +130,7 @@
             </button>
 
             <button
-              class="flex h-[50px] w-full max-w-[250px] items-center justify-center gap-[10px] rounded-[12px] border-[1px] border-[#000] text-[10px] max-mobile:h-[28px]"
+              class="flex h-[50px] w-full max-w-[250px] items-center justify-center gap-[10px] rounded-[12px] border-[1px] border-black text-[10px] max-mobile:h-[28px]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -182,14 +183,14 @@
           <!-- Боковое меню (На ПК) -->
           <aside class="max-laptop:hidden">
             <p
-              class="relative mb-[30px] pb-[35px] text-[12px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#B1B1B1] after:content-['']"
+              class="after:bg-gray2 relative mb-[30px] pb-[35px] text-[12px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
             >
               1,688 Товар
             </p>
 
             <!-- Чекбоксы -->
             <div
-              class="relative pb-[20px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#B1B1B1] after:content-['']"
+              class="after:bg-gray2 relative pb-[20px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
             >
               <p class="pb-[20px] text-[14px]">Категория</p>
 
@@ -207,7 +208,7 @@
                   />
 
                   <div
-                    class="flex h-5 w-5 cursor-pointer items-center justify-center border-[1px] border-[#E5EAED]"
+                    class="border-grayLight flex h-5 w-5 cursor-pointer items-center justify-center border-[1px]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -237,7 +238,7 @@
                   />
 
                   <div
-                    class="flex h-5 w-5 cursor-pointer items-center justify-center border-[1px] border-[#E5EAED]"
+                    class="border-grayLight flex h-5 w-5 cursor-pointer items-center justify-center border-[1px]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -267,7 +268,7 @@
                   />
 
                   <div
-                    class="flex h-5 w-5 cursor-pointer items-center justify-center border-[1px] border-[#E5EAED]"
+                    class="border-grayLight flex h-5 w-5 cursor-pointer items-center justify-center border-[1px]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -297,7 +298,7 @@
                   />
 
                   <div
-                    class="flex h-5 w-5 cursor-pointer items-center justify-center border-[1px] border-[#E5EAED]"
+                    class="border-grayLight flex h-5 w-5 cursor-pointer items-center justify-center border-[1px]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -327,7 +328,7 @@
                   />
 
                   <div
-                    class="flex h-5 w-5 cursor-pointer items-center justify-center border-[1px] border-[#E5EAED]"
+                    class="border-grayLight flex h-5 w-5 cursor-pointer items-center justify-center border-[1px]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -357,7 +358,7 @@
                   />
 
                   <div
-                    class="flex h-5 w-5 cursor-pointer items-center justify-center border-[1px] border-[#E5EAED]"
+                    class="border-grayLight flex h-5 w-5 cursor-pointer items-center justify-center border-[1px]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -415,7 +416,7 @@
 
             <!-- Цвет -->
             <div
-              class="relative flex flex-col gap-[20px] pb-[10px] pt-[20px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#B1B1B1] after:content-['']"
+              class="after:bg-gray2 relative flex flex-col gap-[20px] pb-[10px] pt-[20px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
             >
               <span class="text-[14px]">Цвет</span>
 
@@ -428,7 +429,7 @@
 
             <!-- Цена -->
             <div
-              class="relative flex flex-col gap-[20px] pb-[25px] pt-[25px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#B1B1B1] after:content-['']"
+              class="after:bg-gray2 relative flex flex-col gap-[20px] pb-[25px] pt-[25px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
             >
               <span class="text-[14px]">Цена</span>
 
@@ -470,7 +471,7 @@
             <div data-dropdown>
               <div
                 data-dropdownBtn
-                class="relative pb-[16px] pt-[24px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#B1B1B1] after:content-['']"
+                class="after:bg-gray2 relative pb-[16px] pt-[24px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
               >
                 <span>Wow</span>
 
@@ -505,7 +506,7 @@
                 class="max-h-0 overflow-hidden transition-all"
               >
                 <div
-                  class="relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#B1B1B1] after:content-['']"
+                  class="after:bg-gray2 relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
                 >
                   <span>LOCOTO</span>
 
@@ -521,7 +522,7 @@
                 </div>
 
                 <div
-                  class="relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#B1B1B1] after:content-['']"
+                  class="after:bg-gray2 relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
                 >
                   <span>LOOW</span>
 
@@ -537,7 +538,7 @@
                 </div>
 
                 <div
-                  class="relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#B1B1B1] after:content-['']"
+                  class="after:bg-gray2 relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
                 >
                   <span>REDDED </span>
 
@@ -559,7 +560,7 @@
 
               <div
                 data-dropdownBtn
-                class="relative pb-[16px] pt-[24px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#B1B1B1] after:content-['']"
+                class="after:bg-gray2 relative pb-[16px] pt-[24px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
               >
                 <span>Wow</span>
 
@@ -594,7 +595,7 @@
                 class="max-h-0 overflow-hidden transition-all"
               >
                 <div
-                  class="relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#B1B1B1] after:content-['']"
+                  class="after:bg-gray2 relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
                 >
                   <span>LOCOTO</span>
 
@@ -610,7 +611,7 @@
                 </div>
 
                 <div
-                  class="relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#B1B1B1] after:content-['']"
+                  class="after:bg-gray2 relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
                 >
                   <span>LOOW</span>
 
@@ -626,7 +627,7 @@
                 </div>
 
                 <div
-                  class="relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#B1B1B1] after:content-['']"
+                  class="after:bg-gray2 relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
                 >
                   <span>REDDED </span>
 
@@ -1177,7 +1178,7 @@
 
             <!-- Пагинация -->
             <section
-              class="relative flex w-full justify-between after:absolute after:left-0 after:top-[-8.5px] after:h-[2px] after:w-full after:bg-[#B1B1B1] after:content-[''] max-laptop:mt-[60px] tablet:px-[35px]"
+              class="after:bg-gray2 relative flex w-full justify-between after:absolute after:left-0 after:top-[-8.5px] after:h-[2px] after:w-full after:content-[''] max-laptop:mt-[60px] tablet:px-[35px]"
             >
               <div class="flex gap-[12px]">
                 <button>

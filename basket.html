@@ -44,12 +44,13 @@
         theme: {
           extend: {
             colors: {
-              secondary: "#B41C21",
               primary: "#ffffff",
               third: "#F4EAC8",
               gray: "#c5c5c5",
-
-              red: "#CD3836",
+              gray2: "#B1B1B1",
+              grayLight: "#E5EAED",
+              darkGray: "#565656",
+              darkGray2: "#505050",
               red2: "#A42D2A",
             },
             gridTemplateColumns: {
@@ -141,7 +142,7 @@
     >
       <div class="mx-auto px-4 tablet:max-w-[457px]">
         <h3
-          class="relative pb-[20px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#B1B1B1] after:content-[''] max-tablet:text-[14px]"
+          class="after:bg-gray2 relative pb-[20px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-[''] max-tablet:text-[14px]"
         >
           Корзина / 2 шт.
         </h3>
@@ -206,16 +207,16 @@
 
         <!--  Промокод -->
         <div
-          class="relative flex items-center gap-4 font-roboto after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-[#B1B1B1] after:content-[''] max-tablet:pb-[30px] tablet:pb-[25px]"
+          class="after:bg-gray2 relative flex items-center gap-4 font-roboto after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-[''] max-tablet:pb-[30px] tablet:pb-[25px]"
         >
           <input
-            class="w-full border-[1px] border-[#000] px-[12px] font-light max-tablet:h-[30px] max-tablet:rounded-[20px] max-tablet:py-[5px] max-tablet:text-[10px] tablet:h-[48px] tablet:rounded-[30px] tablet:text-[14px]"
+            class="w-full border-[1px] border-black px-[12px] font-light max-tablet:h-[30px] max-tablet:rounded-[20px] max-tablet:py-[5px] max-tablet:text-[10px] tablet:h-[48px] tablet:rounded-[30px] tablet:text-[14px]"
             type="text"
             placeholder="Промокод"
           />
 
           <button
-            class="border-[1px] border-[#000] px-[16px] max-tablet:h-[30px] max-tablet:rounded-[20px] max-tablet:rounded-[20px] max-tablet:py-[5px] max-tablet:text-[10px] tablet:h-[48px] tablet:rounded-[30px]"
+            class="border-[1px] border-black px-[16px] max-tablet:h-[30px] max-tablet:rounded-[20px] max-tablet:rounded-[20px] max-tablet:py-[5px] max-tablet:text-[10px] tablet:h-[48px] tablet:rounded-[30px]"
           >
             Применить
           </button>
@@ -226,7 +227,7 @@
         <div
           class="relative flex flex-col gap-[14px] max-tablet:pt-[30px] tablet:pt-[16px]"
         >
-          <div class="flex justify-between text-[10px] text-[#565656]">
+          <div class="text-darkGray flex justify-between text-[10px]">
             <span>Скидка</span>
 
             <span>-360₽</span>

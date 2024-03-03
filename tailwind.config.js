@@ -20,12 +20,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        secondary: "#B41C21",
         primary: "#ffffff",
         third: "#F4EAC8",
         gray: "#c5c5c5",
-
-        red: "#CD3836",
+        gray2: "#B1B1B1",
+        grayLight: "#E5EAED",
+        darkGray: "#565656",
+        darkGray2: "#505050",
         red2: "#A42D2A",
       },
       gridTemplateColumns: {
