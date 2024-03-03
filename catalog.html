@@ -69,6 +69,10 @@
               inter: ["Inter"],
             },
 
+            borderRadius: {
+              main: "34px",
+            },
+
             screens: {
               mobile: "460px",
               tablet: "768px",
@@ -80,15 +84,15 @@
     </script>
   </head>
   <body>
-    <section class="pt-[60px]">
+    <section class="pt-[3.75rem]">
       <div class="mx-auto my-0 max-w-[1310px] px-4">
         <div class="laptop:grid-cols-aside laptop:grid laptop:gap-20">
           <!-- Кнопки для фильтров (На Мобилках) -->
           <section
-            class="items-center justify-between gap-4 pb-[40px] pt-[70] max-laptop:flex laptop:hidden"
+            class="items-center justify-between gap-4 pb-[2.5rem] pt-[70] max-laptop:flex laptop:hidden"
           >
             <button
-              class="flex h-[50px] w-full max-w-[250px] items-center justify-center gap-[10px] rounded-[12px] border-[1px] border-black text-[10px] max-mobile:h-[28px]"
+              class="flex h-[3.125rem] w-full max-w-[250px] items-center justify-center gap-[0.625rem] rounded-[12px] border-[1px] border-black text-[0.625rem] max-mobile:h-[28px]"
             >
               <svg
                 class="text-[#3B3B3B]"
@@ -114,7 +118,7 @@
             </button>
 
             <button
-              class="flex h-[50px] w-full max-w-[250px] items-center justify-center gap-[10px] rounded-[12px] border-[1px] border-black text-[10px] max-mobile:h-[28px]"
+              class="flex h-[3.125rem] w-full max-w-[250px] items-center justify-center gap-[0.625rem] rounded-[12px] border-[1px] border-black text-[0.625rem] max-mobile:h-[28px]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -167,23 +171,23 @@
           <!-- Боковое меню (На ПК) -->
           <aside class="max-laptop:hidden">
             <p
-              class="after:bg-gray2 relative mb-[30px] pb-[35px] text-[12px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
+              class="after:bg-gray2 relative mb-[1.875rem] pb-[35px] text-[12px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
             >
               1,688 Товар
             </p>
 
             <!-- Чекбоксы -->
             <div
-              class="after:bg-gray2 relative pb-[20px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
+              class="after:bg-gray2 relative pb-[1.25rem] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
             >
-              <p class="pb-[20px] text-[14px]">Категория</p>
+              <p class="pb-[1.25rem] text-[0.875rem]">Категория</p>
 
               <form
-                class="flex h-[140px] flex-col gap-[10px] overflow-scroll text-[10px]"
+                class="flex h-[140px] flex-col gap-[0.625rem] overflow-scroll text-[0.625rem]"
               >
                 <label
                   id="check-1"
-                  class="flex cursor-pointer items-center gap-[10px]"
+                  class="flex cursor-pointer items-center gap-[0.625rem]"
                 >
                   <input
                     id="check-1"
@@ -213,7 +217,7 @@
 
                 <label
                   id="check-2"
-                  class="flex cursor-pointer items-center gap-[10px]"
+                  class="flex cursor-pointer items-center gap-[0.625rem]"
                 >
                   <input
                     id="check-2"
@@ -243,7 +247,7 @@
 
                 <label
                   id="check-3"
-                  class="flex cursor-pointer items-center gap-[10px]"
+                  class="flex cursor-pointer items-center gap-[0.625rem]"
                 >
                   <input
                     id="check-3"
@@ -273,7 +277,7 @@
 
                 <label
                   id="check-4"
-                  class="flex cursor-pointer items-center gap-[10px]"
+                  class="flex cursor-pointer items-center gap-[0.625rem]"
                 >
                   <input
                     id="check-4"
@@ -303,7 +307,7 @@
 
                 <label
                   id="check-5"
-                  class="flex cursor-pointer items-center gap-[10px]"
+                  class="flex cursor-pointer items-center gap-[0.625rem]"
                 >
                   <input
                     id="check-5"
@@ -333,7 +337,7 @@
 
                 <label
                   id="check-6"
-                  class="flex cursor-pointer items-center gap-[10px]"
+                  class="flex cursor-pointer items-center gap-[0.625rem]"
                 >
                   <input
                     id="check-6"
@@ -362,7 +366,7 @@
                 </label>
               </form>
 
-              <div class="flex items-center gap-[5px] pt-[20px]">
+              <div class="flex items-center gap-[5px] pt-[1.25rem]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="12"
@@ -391,7 +395,7 @@
                     />
                   </g>
                 </svg>
-                <button class="text-[8px] leading-[19px] underline">
+                <button class="text-[8px] leading-[1.188rem] underline">
                   Сбросить параметры
                 </button>
               </div>
@@ -400,11 +404,11 @@
 
             <!-- Цвет -->
             <div
-              class="after:bg-gray2 relative flex flex-col gap-[20px] pb-[10px] pt-[20px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
+              class="after:bg-gray2 relative flex flex-col gap-[1.25rem] pb-[0.625rem] pt-[1.25rem] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
             >
-              <span class="text-[14px]">Цвет</span>
+              <span class="text-[0.875rem]">Цвет</span>
 
-              <select class="h-[20px] cursor-pointer text-[10px]">
+              <select class="h-[1.25rem] cursor-pointer text-[0.625rem]">
                 <option value="gold">Золотой</option>
                 <option value="silver">Серебрянный</option>
               </select>
@@ -413,11 +417,11 @@
 
             <!-- Цена -->
             <div
-              class="after:bg-gray2 relative flex flex-col gap-[20px] pb-[25px] pt-[25px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
+              class="after:bg-gray2 relative flex flex-col gap-[1.25rem] pb-[25px] pt-[25px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
             >
-              <span class="text-[14px]">Цена</span>
+              <span class="text-[0.875rem]">Цена</span>
 
-              <div class="flex justify-between gap-[10px] text-[10px]">
+              <div class="flex justify-between gap-[0.625rem] text-[0.625rem]">
                 <label
                   for="inp1"
                   class="flex min-h-[46px] w-full cursor-pointer items-center justify-center gap-[2px] rounded-full border"
@@ -455,7 +459,7 @@
             <div data-dropdown>
               <div
                 data-dropdownBtn
-                class="after:bg-gray2 relative pb-[16px] pt-[24px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
+                class="after:bg-gray2 relative pb-[1rem] pt-[24px] text-[0.625rem] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
               >
                 <span>Wow</span>
 
@@ -490,13 +494,13 @@
                 class="max-h-0 overflow-hidden transition-all"
               >
                 <div
-                  class="after:bg-gray2 relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
+                  class="after:bg-gray2 relative pt-[1rem] text-[0.625rem] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
                 >
                   <span>LOCOTO</span>
 
                   <button
                     type="button"
-                    class="flex w-full pb-[16px] font-extralight"
+                    class="flex w-full pb-[1rem] font-extralight"
                     id="options-menu"
                     aria-haspopup="true"
                     aria-expanded="true"
@@ -506,13 +510,13 @@
                 </div>
 
                 <div
-                  class="after:bg-gray2 relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
+                  class="after:bg-gray2 relative pt-[1rem] text-[0.625rem] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
                 >
                   <span>LOOW</span>
 
                   <button
                     type="button"
-                    class="flex w-full pb-[16px] font-extralight"
+                    class="flex w-full pb-[1rem] font-extralight"
                     id="options-menu"
                     aria-haspopup="true"
                     aria-expanded="true"
@@ -522,13 +526,13 @@
                 </div>
 
                 <div
-                  class="after:bg-gray2 relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
+                  class="after:bg-gray2 relative pt-[1rem] text-[0.625rem] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
                 >
                   <span>REDDED </span>
 
                   <button
                     type="button"
-                    class="flex w-full pb-[16px] font-extralight"
+                    class="flex w-full pb-[1rem] font-extralight"
                     id="options-menu"
                     aria-haspopup="true"
                     aria-expanded="true"
@@ -540,11 +544,11 @@
             </div>
 
             <div data-dropdown>
-              <p class="pt-[24px] text-[14px]">Бренд</p>
+              <p class="pt-[24px] text-[0.875rem]">Бренд</p>
 
               <div
                 data-dropdownBtn
-                class="after:bg-gray2 relative pb-[16px] pt-[24px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
+                class="after:bg-gray2 relative pb-[1rem] pt-[24px] text-[0.625rem] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
               >
                 <span>Wow</span>
 
@@ -579,13 +583,13 @@
                 class="max-h-0 overflow-hidden transition-all"
               >
                 <div
-                  class="after:bg-gray2 relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
+                  class="after:bg-gray2 relative pt-[1rem] text-[0.625rem] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
                 >
                   <span>LOCOTO</span>
 
                   <button
                     type="button"
-                    class="flex w-full pb-[16px] font-extralight"
+                    class="flex w-full pb-[1rem] font-extralight"
                     id="options-menu"
                     aria-haspopup="true"
                     aria-expanded="true"
@@ -595,13 +599,13 @@
                 </div>
 
                 <div
-                  class="after:bg-gray2 relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
+                  class="after:bg-gray2 relative pt-[1rem] text-[0.625rem] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
                 >
                   <span>LOOW</span>
 
                   <button
                     type="button"
-                    class="flex w-full pb-[16px] font-extralight"
+                    class="flex w-full pb-[1rem] font-extralight"
                     id="options-menu"
                     aria-haspopup="true"
                     aria-expanded="true"
@@ -611,13 +615,13 @@
                 </div>
 
                 <div
-                  class="after:bg-gray2 relative pt-[16px] text-[10px] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
+                  class="after:bg-gray2 relative pt-[1rem] text-[0.625rem] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-['']"
                 >
                   <span>REDDED </span>
 
                   <button
                     type="button"
-                    class="flex w-full pb-[16px] font-extralight"
+                    class="flex w-full pb-[1rem] font-extralight"
                     id="options-menu"
                     aria-haspopup="true"
                     aria-expanded="true"
@@ -638,9 +642,9 @@
           </aside>
           <!-- /Боковое меню (На ПК)-->
 
-          <section class="max-laptop:pb-[60px] laptop:pb-[70px]">
+          <section class="max-laptop:pb-[3.75rem] laptop:pb-[4.375rem]">
             <!-- Хлебные крошки -->
-            <div class="pb-[50px] pt-[8px] text-[12px] max-laptop:hidden">
+            <div class="pb-[3.125rem] pt-[8px] text-[12px] max-laptop:hidden">
               <a href="javascript:void(0)">Главная</a>
               /
               <a href="javascript:void(0)">Каталог</a>
@@ -650,7 +654,7 @@
             <!-- /Хлебные крошки -->
 
             <p
-              class="border-gray mb-[60px] rounded-[12px] border-[1px] p-[9px] text-[10px] leading-[18px] max-laptop:hidden"
+              class="border-gray mb-[3.75rem] rounded-[12px] border-[1px] p-[9px] text-[0.625rem] leading-[18px] max-laptop:hidden"
             >
               Проект My Little Flea Market (MLFM) появился в 2013 году. Начался
               он как страница для ближайших друзей и знакомых, где можно было
@@ -665,10 +669,10 @@
 
             <!-- Слайдер 1 -->
             <div
-              class="swiper-catalogItems overflow-hidden max-laptop:pb-[60px] laptop:pb-[100px]"
+              class="swiper-catalogItems overflow-hidden max-laptop:pb-[3.75rem] laptop:pb-[6.25rem]"
             >
               <div
-                class="swiper-wrapper laptop:grid laptop:grid-cols-3 laptop:gap-[30px]"
+                class="swiper-wrapper laptop:grid laptop:grid-cols-3 laptop:gap-[1.875rem]"
               >
                 <article class="swiper-slide">
                   <div class="relative">
@@ -780,7 +784,7 @@
 
             <!-- Изображение -->
             <div
-              class="overflow-hidden max-laptop:mx-[-16px] max-laptop:pb-[60px] laptop:pb-[100px]"
+              class="overflow-hidden max-laptop:mx-[-16px] max-laptop:pb-[3.75rem] laptop:pb-[6.25rem]"
             >
               <img
                 src="./public/img/catalog/1.png"
@@ -791,9 +795,9 @@
             <!-- /Изображение -->
 
             <!-- Слайдер 2 -->
-            <div class="swiper-catalogItems2 overflow-hidden pb-[60px]">
+            <div class="swiper-catalogItems2 overflow-hidden pb-[3.75rem]">
               <div
-                class="swiper-wrapper laptop:grid laptop:grid-cols-3 laptop:gap-[30px]"
+                class="swiper-wrapper laptop:grid laptop:grid-cols-3 laptop:gap-[1.875rem]"
               >
                 <article class="swiper-slide">
                   <div class="relative">
@@ -904,9 +908,9 @@
             <!-- /Слайдер 2 -->
 
             <!-- Слайдер 3 -->
-            <div class="swiper-catalogItems3 overflow-hidden pb-[60px]">
+            <div class="swiper-catalogItems3 overflow-hidden pb-[3.75rem]">
               <div
-                class="swiper-wrapper laptop:grid laptop:grid-cols-3 laptop:gap-[30px]"
+                class="swiper-wrapper laptop:grid laptop:grid-cols-3 laptop:gap-[1.875rem]"
               >
                 <article class="swiper-slide">
                   <div class="relative">
@@ -1017,10 +1021,10 @@
             <!-- /Слайдер 3 -->
 
             <div
-              class="flex items-center justify-around max-laptop:justify-between max-laptop:gap-[40px] max-tablet:pb-[85px] tablet:pb-[60px] tablet:pt-[40px]"
+              class="flex items-center justify-around max-laptop:justify-between max-laptop:gap-[2.5rem] max-tablet:pb-[85px] tablet:pb-[3.75rem] tablet:pt-[2.5rem]"
             >
               <div
-                class="text-center text-red max-laptop:pl-[15px] laptop:pl-[40px]"
+                class="text-center text-red max-laptop:pl-[0.938rem] laptop:pl-[2.5rem]"
               >
                 <img
                   src="./public/img/catalog/3.png"
@@ -1039,9 +1043,9 @@
             </div>
 
             <!-- Слайдер 4 -->
-            <div class="swiper-catalogItems4 overflow-hidden pb-[60px]">
+            <div class="swiper-catalogItems4 overflow-hidden pb-[3.75rem]">
               <div
-                class="swiper-wrapper laptop:grid laptop:grid-cols-3 laptop:gap-[30px]"
+                class="swiper-wrapper laptop:grid laptop:grid-cols-3 laptop:gap-[1.875rem]"
               >
                 <article class="swiper-slide">
                   <div class="relative">
@@ -1153,7 +1157,7 @@
 
             <!-- Пагинация -->
             <section
-              class="after:bg-gray2 relative flex w-full justify-between after:absolute after:left-0 after:top-[-8.5px] after:h-[2px] after:w-full after:content-[''] max-laptop:mt-[60px] tablet:px-[35px]"
+              class="after:bg-gray2 relative flex w-full justify-between after:absolute after:left-0 after:top-[-8.5px] after:h-[2px] after:w-full after:content-[''] max-laptop:mt-[3.75rem] tablet:px-[35px]"
             >
               <div class="flex gap-[12px]">
                 <button>

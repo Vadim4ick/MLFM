@@ -37,6 +37,9 @@ module.exports = {
         aside: "275px 1fr",
         delivery: "49% 51%",
       },
+      borderRadius: {
+        main: "34px",
+      },
       fontFamily: {
         main: ["Unbounded"],
         montserrat: ["Montserrat"],

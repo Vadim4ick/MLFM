@@ -118,3 +118,9 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+/* Для карты */
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+/* /Для карты */

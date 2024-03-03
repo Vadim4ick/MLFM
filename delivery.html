@@ -62,6 +62,10 @@
               inter: ["Inter"],
             },
 
+            borderRadius: {
+              main: "34px",
+            },
+
             screens: {
               mobile: "460px",
               tablet: "768px",
@@ -73,7 +77,7 @@
     </script>
   </head>
   <body>
-    <section class="laptop:grid-cols-delivery laptop:grid laptop:pb-[60px]">
+    <section class="laptop:grid-cols-delivery laptop:grid laptop:pb-[3.75rem]">
       <!-- Контактная информация -->
       <div>
         <div class="mx-auto px-4 laptop:max-w-[581px]">
@@ -81,33 +85,33 @@
             <!-- Контактная информация -->
             <div>
               <h3
-                class="max-tablet:pb-[24px] max-tablet:text-[14px] max-tablet:font-medium tablet:pb-[50px] tablet:text-[24px]"
+                class="max-tablet:pb-[24px] max-tablet:text-[0.875rem] max-tablet:font-medium tablet:pb-[3.125rem] tablet:text-[24px]"
               >
                 Контактная информация
               </h3>
 
-              <div class="flex flex-col gap-[20px]">
+              <div class="flex flex-col gap-[1.25rem]">
                 <label class="flex cursor-pointer flex-col gap-2" for="inpName">
-                  <span class="max-tablet:text-[10px] tablet:text-[12px]"
+                  <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                     >Контактное лицо (ФИО)*</span
                   >
 
                   <input
                     id="inpName"
-                    class="w-full border-[1px] border-black font-light max-tablet:h-[30px] max-tablet:rounded-[20px] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[10px] tablet:h-[48px] tablet:rounded-[35px] tablet:px-[14px] tablet:text-[14px]"
+                    class="w-full border-[1px] border-black font-light max-tablet:h-[1.875rem] max-tablet:rounded-[1.25rem] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[0.625rem] tablet:h-[48px] tablet:rounded-[35px] tablet:px-[0.875rem] tablet:text-[0.875rem]"
                     type="text"
                     placeholder="Введите имя"
                   />
                 </label>
 
                 <label class="flex cursor-pointer flex-col gap-2" for="inpName">
-                  <span class="max-tablet:text-[10px] tablet:text-[12px]"
+                  <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                     >Электронный адрес (Email)*</span
                   >
 
                   <input
                     id="inpName"
-                    class="w-full border-[1px] border-black font-light max-tablet:h-[30px] max-tablet:rounded-[20px] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[10px] tablet:h-[48px] tablet:rounded-[35px] tablet:px-[14px] tablet:text-[14px]"
+                    class="w-full border-[1px] border-black font-light max-tablet:h-[1.875rem] max-tablet:rounded-[1.25rem] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[0.625rem] tablet:h-[48px] tablet:rounded-[35px] tablet:px-[0.875rem] tablet:text-[0.875rem]"
                     type="text"
                     placeholder="user@gmail.com"
                   />
@@ -116,7 +120,7 @@
 
               <label
                 id="check-1"
-                class="flex cursor-pointer items-center gap-[10px] pt-[12px]"
+                class="flex cursor-pointer items-center gap-[0.625rem] pt-[12px]"
               >
                 <input
                   id="check-1"
@@ -141,38 +145,40 @@
                   </svg>
                 </div>
 
-                <span class="text-[10px]">Стать постоянным покупателем</span>
+                <span class="text-[0.625rem]"
+                  >Стать постоянным покупателем</span
+                >
               </label>
 
               <label
-                class="flex cursor-pointer flex-col gap-2 pt-[20px]"
+                class="flex cursor-pointer flex-col gap-2 pt-[1.25rem]"
                 for="inpName"
               >
-                <span class="max-tablet:text-[10px] tablet:text-[12px]"
+                <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                   >Номер телефона</span
                 >
 
                 <input
                   id="inpName"
-                  class="w-full border-[1px] border-black font-light max-tablet:h-[30px] max-tablet:rounded-[20px] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[10px] tablet:h-[48px] tablet:rounded-[35px] tablet:px-[14px] tablet:text-[14px]"
+                  class="w-full border-[1px] border-black font-light max-tablet:h-[1.875rem] max-tablet:rounded-[1.25rem] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[0.625rem] tablet:h-[48px] tablet:rounded-[35px] tablet:px-[0.875rem] tablet:text-[0.875rem]"
                   type="text"
                   placeholder="+799999487787"
                 />
               </label>
 
               <div class="max-tablet:pt-6 tablet:pt-3">
-                <a class="text-[10px] underline" href="javascript:void(0)"
+                <a class="text-[0.625rem] underline" href="javascript:void(0)"
                   >Впервые у нас ?
                 </a>
               </div>
 
               <!-- Радио кнопки -->
               <div
-                class="flex flex-col pt-[20px] max-tablet:gap-[12px] tablet:gap-[20px]"
+                class="flex flex-col pt-[1.25rem] max-tablet:gap-[12px] tablet:gap-[1.25rem]"
               >
                 <label
                   id="radio-1"
-                  class="flex cursor-pointer items-center gap-[10px]"
+                  class="flex cursor-pointer items-center gap-[0.625rem]"
                 >
                   <input
                     id="radio-1"
@@ -186,12 +192,12 @@
                     class="relative flex h-5 w-5 cursor-pointer items-center justify-center rounded-full border-[1px] border-black"
                   ></div>
 
-                  <span class="text-[10px]">Доставка - 500Р</span>
+                  <span class="text-[0.625rem]">Доставка - 500Р</span>
                 </label>
 
                 <label
                   id="radio-2"
-                  class="flex cursor-pointer items-center gap-[10px]"
+                  class="flex cursor-pointer items-center gap-[0.625rem]"
                 >
                   <input
                     id="radio-2"
@@ -204,7 +210,7 @@
                     class="relative flex h-5 w-5 cursor-pointer items-center justify-center rounded-full border-[1px] border-black"
                   ></div>
 
-                  <span class="text-[10px]">Самовывоз - 0Р</span>
+                  <span class="text-[0.625rem]">Самовывоз - 0Р</span>
                 </label>
               </div>
               <!-- /Радио кнопки -->
@@ -212,21 +218,21 @@
             <!-- /Контактная информация -->
 
             <!-- Адрес доставки -->
-            <div class="max-tablet:pt-[32px] tablet:pt-[50px]">
+            <div class="max-tablet:pt-[2rem] tablet:pt-[3.125rem]">
               <h3
-                class="max-tablet:pb-[24px] max-tablet:text-[14px] max-tablet:font-medium tablet:pb-[50px] tablet:text-[24px]"
+                class="max-tablet:pb-[24px] max-tablet:text-[0.875rem] max-tablet:font-medium tablet:pb-[3.125rem] tablet:text-[24px]"
               >
                 Адрес доставки
               </h3>
 
               <div class="flex flex-col gap-5">
                 <div class="flex cursor-pointer flex-col gap-2" for="inpName">
-                  <span class="max-tablet:text-[10px] tablet:text-[12px]"
+                  <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                     >Город</span
                   >
 
                   <select
-                    class="w-full border-[1px] border-black font-light max-tablet:h-[30px] max-tablet:rounded-[20px] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[10px] tablet:h-[48px] tablet:rounded-[35px] tablet:px-[14px] tablet:text-[14px]"
+                    class="w-full border-[1px] border-black font-light max-tablet:h-[1.875rem] max-tablet:rounded-[1.25rem] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[0.625rem] tablet:h-[48px] tablet:rounded-[35px] tablet:px-[0.875rem] tablet:text-[0.875rem]"
                   >
                     <option value="Москва">Москва</option>
                     <option value="Пермь">Пермь</option>
@@ -234,13 +240,13 @@
                 </div>
 
                 <label class="flex cursor-pointer flex-col gap-2" for="inpName">
-                  <span class="max-tablet:text-[10px] tablet:text-[12px]"
+                  <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                     >Улица</span
                   >
 
                   <input
                     id="inpName"
-                    class="w-full border-[1px] border-black font-light max-tablet:h-[30px] max-tablet:rounded-[20px] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[10px] tablet:h-[48px] tablet:rounded-[35px] tablet:px-[14px] tablet:text-[14px]"
+                    class="w-full border-[1px] border-black font-light max-tablet:h-[1.875rem] max-tablet:rounded-[1.25rem] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[0.625rem] tablet:h-[48px] tablet:rounded-[35px] tablet:px-[0.875rem] tablet:text-[0.875rem]"
                     type="text"
                     placeholder="Ленина 88"
                   />
@@ -251,13 +257,13 @@
                     class="flex cursor-pointer flex-col gap-2"
                     for="inpName"
                   >
-                    <span class="max-tablet:text-[10px] tablet:text-[12px]"
+                    <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                       >Дом</span
                     >
 
                     <input
                       id="inpName"
-                      class="w-full border-[1px] border-black font-light max-tablet:h-[25px] max-tablet:rounded-[20px] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[10px] tablet:h-[30px] tablet:rounded-[35px] tablet:px-[14px] tablet:text-[14px]"
+                      class="w-full border-[1px] border-black font-light max-tablet:h-[25px] max-tablet:rounded-[1.25rem] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[0.625rem] tablet:h-[1.875rem] tablet:rounded-[35px] tablet:px-[0.875rem] tablet:text-[0.875rem]"
                       type="text"
                     />
                   </label>
@@ -266,13 +272,13 @@
                     class="flex cursor-pointer flex-col gap-2"
                     for="inpName"
                   >
-                    <span class="max-tablet:text-[10px] tablet:text-[12px]"
+                    <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                       >Подъезд</span
                     >
 
                     <input
                       id="inpName"
-                      class="w-full border-[1px] border-black font-light max-tablet:h-[25px] max-tablet:rounded-[20px] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[10px] tablet:h-[30px] tablet:rounded-[35px] tablet:px-[14px] tablet:text-[14px]"
+                      class="w-full border-[1px] border-black font-light max-tablet:h-[25px] max-tablet:rounded-[1.25rem] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[0.625rem] tablet:h-[1.875rem] tablet:rounded-[35px] tablet:px-[0.875rem] tablet:text-[0.875rem]"
                       type="text"
                     />
                   </label>
@@ -281,26 +287,26 @@
                     class="flex cursor-pointer flex-col gap-2"
                     for="inpName"
                   >
-                    <span class="max-tablet:text-[10px] tablet:text-[12px]"
+                    <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                       >Квартира</span
                     >
 
                     <input
                       id="inpName"
-                      class="w-full border-[1px] border-black font-light max-tablet:h-[25px] max-tablet:rounded-[20px] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[10px] tablet:h-[30px] tablet:rounded-[35px] tablet:px-[14px] tablet:text-[14px]"
+                      class="w-full border-[1px] border-black font-light max-tablet:h-[25px] max-tablet:rounded-[1.25rem] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[0.625rem] tablet:h-[1.875rem] tablet:rounded-[35px] tablet:px-[0.875rem] tablet:text-[0.875rem]"
                       type="text"
                     />
                   </label>
                 </div>
 
                 <label class="flex cursor-pointer flex-col gap-2" for="inpName">
-                  <span class="max-tablet:text-[10px] tablet:text-[12px]"
+                  <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                     >Почтовый индекс*</span
                   >
 
                   <input
                     id="inpName"
-                    class="w-full border-[1px] border-black font-light max-tablet:h-[30px] max-tablet:rounded-[20px] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[10px] tablet:h-[48px] tablet:rounded-[35px] tablet:px-[14px] tablet:text-[14px]"
+                    class="w-full border-[1px] border-black font-light max-tablet:h-[1.875rem] max-tablet:rounded-[1.25rem] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[0.625rem] tablet:h-[48px] tablet:rounded-[35px] tablet:px-[0.875rem] tablet:text-[0.875rem]"
                     type="text"
                   />
                 </label>
@@ -309,31 +315,31 @@
             <!-- /Адрес доставки -->
 
             <!-- Комментарий к заказу -->
-            <div class="max-tablet:pt-[24px] tablet:pt-[50px]">
+            <div class="max-tablet:pt-[24px] tablet:pt-[3.125rem]">
               <h3
-                class="max-tablet:pb-[12px] max-tablet:text-[12px] tablet:pb-[50px] tablet:text-[24px]"
+                class="max-tablet:pb-[12px] max-tablet:text-[12px] tablet:pb-[3.125rem] tablet:text-[24px]"
               >
                 Комментарий к заказу
               </h3>
 
               <textarea
                 placeholder="Введите текст"
-                class="h-[155px] w-full resize-none border-[1px] border-black px-3 py-4 text-[10px] placeholder-gray-900"
+                class="h-[155px] w-full resize-none border-[1px] border-black px-3 py-4 text-[0.625rem] placeholder-gray-900"
               ></textarea>
             </div>
             <!-- /Комментарий к заказу -->
 
             <!-- Способ оплаты -->
-            <div class="max-tablet:pt-[32px] tablet:pt-[50px]">
+            <div class="max-tablet:pt-[2rem] tablet:pt-[3.125rem]">
               <h3
-                class="max-tablet:pb-[12px] max-tablet:text-[12px] tablet:pb-[50px] tablet:text-[24px]"
+                class="max-tablet:pb-[12px] max-tablet:text-[12px] tablet:pb-[3.125rem] tablet:text-[24px]"
               >
                 Способ оплаты
               </h3>
 
               <!-- Радио кнопки -->
               <div
-                class="flex flex-col max-tablet:gap-[12px] tablet:gap-[20px]"
+                class="flex flex-col max-tablet:gap-[12px] tablet:gap-[1.25rem]"
               >
                 <label
                   id="radio-3"
@@ -351,7 +357,7 @@
                     class="relative flex h-5 w-5 cursor-pointer items-center justify-center rounded-full border-[1px] border-black"
                   ></div>
 
-                  <span class="text-[10px]">СПБ</span>
+                  <span class="text-[0.625rem]">СПБ</span>
                 </label>
 
                 <label
@@ -369,7 +375,7 @@
                     class="relative flex h-5 w-5 cursor-pointer items-center justify-center rounded-full border-[1px] border-black"
                   ></div>
 
-                  <span class="text-[10px]">Банковская карта</span>
+                  <span class="text-[0.625rem]">Банковская карта</span>
                 </label>
 
                 <label
@@ -387,7 +393,7 @@
                     class="relative flex h-5 w-5 cursor-pointer items-center justify-center rounded-full border-[1px] border-black"
                   ></div>
 
-                  <span class="text-[10px]">Долями</span>
+                  <span class="text-[0.625rem]">Долями</span>
                 </label>
 
                 <label
@@ -405,7 +411,7 @@
                     class="relative flex h-5 w-5 cursor-pointer items-center justify-center rounded-full border-[1px] border-black"
                   ></div>
 
-                  <span class="text-[10px]">SberPay</span>
+                  <span class="text-[0.625rem]">SberPay</span>
                 </label>
 
                 <label
@@ -423,7 +429,7 @@
                     class="relative flex h-5 w-5 cursor-pointer items-center justify-center rounded-full border-[1px] border-black"
                   ></div>
 
-                  <span class="text-[10px]">TinkoffPay</span>
+                  <span class="text-[0.625rem]">TinkoffPay</span>
                 </label>
               </div>
               <!-- /Радио кнопки -->
@@ -431,16 +437,16 @@
             <!-- /Способ оплаты -->
 
             <!-- Кнопка оплаты на ПК -->
-            <div class="mt-[30px] max-laptop:hidden">
+            <div class="mt-[1.875rem] max-laptop:hidden">
               <button
-                class="w-full bg-red2 text-primary max-tablet:min-h-[30px] max-tablet:rounded-[20px] max-tablet:text-[10px] tablet:min-h-[45px] tablet:rounded-[30px]"
+                class="w-full bg-red2 text-primary max-tablet:min-h-[1.875rem] max-tablet:rounded-[1.25rem] max-tablet:text-[0.625rem] tablet:min-h-[45px] tablet:rounded-[1.875rem]"
               >
                 Оплатить заказ
               </button>
 
               <label
                 id="check-2"
-                class="gray flex cursor-pointer items-center gap-[10px] pt-[15px]"
+                class="gray flex cursor-pointer items-center gap-[0.625rem] pt-[0.938rem]"
               >
                 <input
                   id="check-2"
@@ -482,50 +488,54 @@
 
       <!--  Информация о заказе -->
       <div
-        class="font-montserrat max-laptop:pt-[32px] laptop:bg-[#F4F4F4] laptop:pt-[50px]"
+        class="font-montserrat max-laptop:pt-[2rem] laptop:bg-[#F4F4F4] laptop:pt-[3.125rem]"
       >
         <div class="mx-auto px-4 laptop:w-[480px]">
           <!--  Товары -->
-          <div class="flex flex-col gap-[20px]">
-            <article class="flex max-mobile:gap-[10px] mobile:gap-[15px]">
+          <div class="flex flex-col gap-[1.25rem]">
+            <article
+              class="flex max-mobile:gap-[0.625rem] mobile:gap-[0.938rem]"
+            >
               <img
                 src="public/img/delivery/1.png"
                 src="public/img/delivery/1@2x.png 2x"
                 alt="1.png"
-                class="max-mobile:h-[60px] max-mobile:w-[105px] max-mobile:w-[61px] mobile:h-[100px]"
+                class="max-mobile:h-[3.75rem] max-mobile:w-[3.813rem] max-mobile:w-[6.563rem] mobile:h-[6.25rem]"
               />
 
               <div class="flex w-full items-center justify-between">
                 <div class="flex flex-col gap-1">
-                  <span class="text-[10px]">Подвеска</span>
+                  <span class="text-[0.625rem]">Подвеска</span>
 
-                  <p class="text-[10px] font-medium">Undi</p>
+                  <p class="text-[0.625rem] font-medium">Undi</p>
 
                   <span class="text-[8px] opacity-50">1 шт</span>
                 </div>
 
-                <span class="text-[10px]">12,000 ₽</span>
+                <span class="text-[0.625rem]">12,000 ₽</span>
               </div>
             </article>
 
-            <article class="flex max-mobile:gap-[10px] mobile:gap-[15px]">
+            <article
+              class="flex max-mobile:gap-[0.625rem] mobile:gap-[0.938rem]"
+            >
               <img
                 src="public/img/delivery/1.png"
                 src="public/img/delivery/1@2x.png 2x"
                 alt="1.png"
-                class="max-mobile:h-[60px] max-mobile:w-[105px] max-mobile:w-[61px] mobile:h-[100px]"
+                class="max-mobile:h-[3.75rem] max-mobile:w-[3.813rem] max-mobile:w-[6.563rem] mobile:h-[6.25rem]"
               />
 
               <div class="flex w-full items-center justify-between">
                 <div class="flex flex-col gap-1">
-                  <span class="text-[10px]">Подвеска</span>
+                  <span class="text-[0.625rem]">Подвеска</span>
 
-                  <p class="text-[10px] font-medium">Undi</p>
+                  <p class="text-[0.625rem] font-medium">Undi</p>
 
                   <span class="text-[8px] opacity-50">1 шт</span>
                 </div>
 
-                <span class="text-[10px]">12,000 ₽</span>
+                <span class="text-[0.625rem]">12,000 ₽</span>
               </div>
             </article>
           </div>
@@ -533,7 +543,7 @@
 
           <!--  Общая инф-ция о товарах -->
           <div
-            class="laptop:after:bg-gray2 relative flex flex-col gap-[30px] max-laptop:pt-[45px] laptop:pb-[20px] laptop:pt-[20px] laptop:after:absolute laptop:after:bottom-0 laptop:after:left-0 laptop:after:h-[2px] laptop:after:w-full laptop:after:content-['']"
+            class="laptop:after:bg-gray2 relative flex flex-col gap-[1.875rem] max-laptop:pt-[45px] laptop:pb-[1.25rem] laptop:pt-[1.25rem] laptop:after:absolute laptop:after:bottom-0 laptop:after:left-0 laptop:after:h-[2px] laptop:after:w-full laptop:after:content-['']"
           >
             <div
               class="flex justify-between text-[12px] font-medium max-laptop:hidden"
@@ -543,7 +553,7 @@
               <span>24,000₽</span>
             </div>
 
-            <div class="flex justify-between text-[10px]">
+            <div class="flex justify-between text-[0.625rem]">
               <span>Доставка</span>
 
               <span>500₽</span>
@@ -551,15 +561,15 @@
           </div>
 
           <div
-            class="max-laptop:after:bg-gray2 relative flex flex-col gap-[14px] max-laptop:pb-[26px] max-laptop:pt-[16px] max-laptop:after:absolute max-laptop:after:bottom-0 max-laptop:after:left-0 max-laptop:after:h-[2px] max-laptop:after:w-full max-laptop:after:content-[''] laptop:pt-[20px]"
+            class="max-laptop:after:bg-gray2 relative flex flex-col gap-[0.875rem] max-laptop:pb-[1.625rem] max-laptop:pt-[1rem] max-laptop:after:absolute max-laptop:after:bottom-0 max-laptop:after:left-0 max-laptop:after:h-[2px] max-laptop:after:w-full max-laptop:after:content-[''] laptop:pt-[1.25rem]"
           >
-            <div class="text-darkGray flex justify-between text-[10px]">
+            <div class="text-darkGray flex justify-between text-[0.625rem]">
               <span>Скидка</span>
 
               <span>-360₽</span>
             </div>
 
-            <div class="flex justify-between text-[10px] font-medium">
+            <div class="flex justify-between text-[0.625rem] font-medium">
               <span>Итого</span>
 
               <span>24,140₽</span>
@@ -568,16 +578,16 @@
           <!--  /Общая инф-ция о товарах -->
 
           <!-- Кнопка оплаты на Мобилках -->
-          <div class="my-[20px] laptop:hidden">
+          <div class="my-[1.25rem] laptop:hidden">
             <button
-              class="w-full bg-red2 text-primary max-tablet:min-h-[37px] max-tablet:rounded-[20px] max-tablet:text-[10px] tablet:min-h-[45px] tablet:rounded-[30px]"
+              class="w-full bg-red2 text-primary max-tablet:min-h-[37px] max-tablet:rounded-[1.25rem] max-tablet:text-[0.625rem] tablet:min-h-[45px] tablet:rounded-[1.875rem]"
             >
               Оплатить заказ
             </button>
 
             <label
               id="check-2"
-              class="flex cursor-pointer items-center gap-[8px] pt-[15px] font-light"
+              class="flex cursor-pointer items-center gap-[8px] pt-[0.938rem] font-light"
             >
               <input
                 id="check-2"
