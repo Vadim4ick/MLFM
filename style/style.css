@@ -2,6 +2,7 @@ body {
   font-family: "Unbounded", sans-serif;
 }
 
+/* Переопределение неккоторых стилей свайпера */
 .swiper-mainBanner-pagination .swiper-pagination-bullet {
   background: rgba(131, 131, 131, 0.85) !important;
 
@@ -50,6 +51,61 @@ body {
     height: 4px !important;
   }
 }
+/* /Переопределение неккоторых стилей свайпера */
+
+/* Оверлей для страницы рассылки */
+.overlayNewsletter {
+  backdrop-filter: blur(20px);
+  background: rgba(17, 17, 17, 0.8);
+}
+/* /Оверлей для страницы рассылки */
+
+/* Стилизация чекбоксов */
+input[type="checkbox"]:checked + div svg {
+  display: block;
+}
+input[type="checkbox"]:not(:checked) + div svg {
+  display: none;
+}
+
+input[type="checkbox"]:checked + div {
+  background: #000;
+}
+
+.gray input[type="checkbox"]:checked + div {
+  background: #505050;
+  border: 1px solid #000;
+}
+
+input[type="checkbox"]:not(:checked) + div {
+  background: transparent;
+}
+/* /Стилизация чекбоксов */
+
+/* Стилизация радиокнопок */
+input[type="radio"]:checked + div::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + div {
+  background: #000;
+}
+input[type="radio"]:not(:checked) + div {
+  background: transparent;
+}
+
+input[type="radio"]:checked + span {
+  background: #000;
+  color: white;
+}
+input[type="radio"]:not(:checked) + span {
+  background: transparent;
+}
+/* /Стилизация радиокнопок */
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
