@@ -16,6 +16,18 @@
     <link rel="stylesheet" href="./style/style.css" />
     <!-- /Стили -->
 
+    <!-- Стили Чекбоксы -->
+    <style>
+      input[type="radio"]:checked + span {
+        background: #000;
+        color: white;
+      }
+      input[type="radio"]:not(:checked) + span {
+        background: transparent;
+      }
+    </style>
+    <!-- /Стили Чекбоксы -->
+
     <!-- Шрифты -->
     <link
       href="https://fonts.googleapis.com/css?family=Unbounded:200,300,regular,500,600,700&display=swap"
@@ -142,11 +154,11 @@
                 <div class="flex max-tablet:gap-[0.75rem] tablet:gap-2">
                   <label class="inline-flex cursor-pointer items-center">
                     <input
+                      checked
                       type="radio"
                       name="size"
                       value="6"
                       class="hidden"
-                      onchange="updateStyle(this)"
                     />
 
                     <span
@@ -157,16 +169,10 @@
                   </label>
 
                   <label class="inline-flex cursor-pointer items-center">
-                    <input
-                      type="radio"
-                      name="size"
-                      value="7"
-                      class="hidden"
-                      onchange="updateStyle(this)"
-                    />
+                    <input type="radio" name="size" value="7" class="hidden" />
 
                     <span
-                      class="flex items-center justify-center rounded-full bg-black text-white max-tablet:min-h-[1.25rem] max-tablet:min-w-[3.438rem] max-tablet:text-[0.625rem] tablet:min-h-[2rem] tablet:min-w-[5.938rem]"
+                      class="flex items-center justify-center rounded-full border border-black bg-white text-black max-tablet:min-h-[1.25rem] max-tablet:min-w-[3.438rem] max-tablet:text-[0.625rem] tablet:min-h-[2rem] tablet:min-w-[5.938rem]"
                       id="option-7"
                       >7</span
                     >
@@ -203,22 +209,24 @@
             </div>
             <!-- /Кнопки "Добавить" -->
 
-            <!-- Спойлеры -->
+            <!-- Dropdown-ы -->
             <div
               class="flex flex-col max-tablet:gap-[0.75rem] tablet:gap-[1.25rem]"
             >
               <div
+                data-dropdown
                 class="flex flex-col items-start text-[0.625rem] max-tablet:gap-[1.25rem] tablet:gap-[0.625rem]"
               >
                 <div class="flex w-full items-center justify-between">
                   <button type="button">Доставка</button>
 
-                  <button>
+                  <button data-dropdownBtn>
                     <svg
                       width="13"
                       height="8"
                       viewBox="0 0 13 8"
                       fill="currentColor"
+                      class="transition-transform"
                     >
                       <path
                         d="M6.09766 0.625C5.86523 0.625 5.66699 0.713867 5.48926 0.891602L0.273438 6.22363C0.123047 6.37402 0.0478516 6.55859 0.0478516 6.77734C0.0478516 7.22168 0.389648 7.57715 0.833984 7.57715C1.05273 7.57715 1.25098 7.48828 1.4082 7.33789L6.09766 2.52539L10.7871 7.33789C10.9375 7.48145 11.1357 7.57715 11.3545 7.57715C11.8057 7.57715 12.1475 7.22168 12.1475 6.77734C12.1475 6.55859 12.0723 6.37402 11.9219 6.22363L6.70605 0.891602C6.52832 0.707031 6.33008 0.625 6.09766 0.625Z"
@@ -228,26 +236,31 @@
                 </div>
 
                 <div
-                  class="leading-[1rem] max-tablet:font-extralight tablet:font-light"
+                  data-dropdownList
+                  class="max-h-0 overflow-hidden leading-[1rem] transition-all max-tablet:font-extralight tablet:font-light"
                 >
-                  SUSAN — это украшения для тех, кто любит моду. Каждый сезон
-                  дизайнеры бренда адаптируют подиумные и стритстайл-тренды в
-                  своих коллекциях.
+                  <p>
+                    SUSAN — это украшения для тех, кто любит моду. Каждый сезон
+                    дизайнеры бренда адаптируют подиумные и стритстайл-тренды в
+                    своих коллекциях.
+                  </p>
                 </div>
               </div>
 
               <div
+                data-dropdown
                 class="flex flex-col items-start text-[0.625rem] max-tablet:gap-[1.25rem] tablet:gap-[0.625rem]"
               >
                 <div class="flex w-full items-center justify-between">
                   <button type="button">Доставка</button>
 
-                  <button>
+                  <button data-dropdownBtn>
                     <svg
                       width="13"
                       height="8"
                       viewBox="0 0 13 8"
                       fill="currentColor"
+                      class="transition-transform"
                     >
                       <path
                         d="M6.09766 0.625C5.86523 0.625 5.66699 0.713867 5.48926 0.891602L0.273438 6.22363C0.123047 6.37402 0.0478516 6.55859 0.0478516 6.77734C0.0478516 7.22168 0.389648 7.57715 0.833984 7.57715C1.05273 7.57715 1.25098 7.48828 1.4082 7.33789L6.09766 2.52539L10.7871 7.33789C10.9375 7.48145 11.1357 7.57715 11.3545 7.57715C11.8057 7.57715 12.1475 7.22168 12.1475 6.77734C12.1475 6.55859 12.0723 6.37402 11.9219 6.22363L6.70605 0.891602C6.52832 0.707031 6.33008 0.625 6.09766 0.625Z"
@@ -257,15 +270,18 @@
                 </div>
 
                 <div
-                  class="leading-[1rem] max-tablet:font-extralight tablet:font-light"
+                  data-dropdownList
+                  class="max-h-0 overflow-hidden leading-[1rem] transition-all max-tablet:font-extralight tablet:font-light"
                 >
-                  SUSAN — это украшения для тех, кто любит моду. Каждый сезон
-                  дизайнеры бренда адаптируют подиумные и стритстайл-тренды в
-                  своих коллекциях.
+                  <p>
+                    SUSAN — это украшения для тех, кто любит моду. Каждый сезон
+                    дизайнеры бренда адаптируют подиумные и стритстайл-тренды в
+                    своих коллекциях.
+                  </p>
                 </div>
               </div>
             </div>
-            <!-- /Спойлеры -->
+            <!-- /Dropdown-ы -->
           </div>
         </article>
       </div>
@@ -590,27 +606,9 @@
     </section>
     <!-- /С этим товаром покупают -->
 
-    <!-- JS логика по radio-кнопкам -->
-    <script>
-      function updateStyle(input) {
-        const id = "option-" + input.value;
-        const labels = document.querySelectorAll('[id^="option-"]');
-        labels.forEach((label) => {
-          label.classList.remove("text-white", "bg-black");
-          label.classList.add(
-            "text-black",
-            "bg-white",
-            "border",
-            "border-black",
-          );
-        });
-        document
-          .getElementById(id)
-          .classList.remove("text-black", "bg-white", "border", "border-black");
-        document.getElementById(id).classList.add("text-white", "bg-black");
-      }
-    </script>
-    <!-- /JS логика по radio-кнопкам -->
+    <!-- Логика Dropdown -->
+    <script src="./js/dropdown.js"></script>
+    <!-- /Логика Dropdown -->
 
     <!-- Initialize Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
