@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О КОМПАНИИ</title>
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- /Стили -->
+
+    <!-- Шрифты -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Unbounded:200,300,regular,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:regular,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- /Шрифты -->
+
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- /tailwind CDN -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              secondary: "#B41C21",
+              primary: "#ffffff",
+              third: "#F4EAC8",
+              gray: "#c5c5c5",
+
+              red: "#CD3836",
+              red2: "#A42D2A",
+            },
+            gridTemplateColumns: {
+              newItems: "repeat(4, 1fr)",
+              buyImage: "1.35fr 0.55fr",
+              buyImageMobile: "1fr 100px",
+              catalogItem: "1fr 410px",
+              aside: "275px 1fr",
+              delivery: "49% 51%",
+            },
+
+            fontFamily: {
+              main: ["Unbounded"],
+              montserrat: ["Montserrat"],
+              roboto: ["Roboto"],
+              inter: ["Inter"],
+            },
+
+            screens: {
+              mobile: "460px",
+              tablet: "768px",
+              laptop: "1024px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section
+      class="max-laptop:pt-[100px] max-tablet:pt-[50px] max-mobile:pt-[32px] laptop:pt-[159px]"
+    >
+      <div class="mx-auto max-w-[732px] px-4">
+        <h2
+          class="pb-[32px] font-medium max-tablet:text-[20px] tablet:text-[32px]"
+        >
+          О КОМПАНИИ
+        </h2>
+
+        <p
+          class="font-light leading-[19px] max-tablet:text-[10px] tablet:text-[14px]"
+        >
+          MLFM - это эксклюзивный магазин, основанный в 2014 году, который
+          специализируется на продаже уникальных винтажных украшений и одежды.
+          Мы предлагаем нашим клиентам только самые изысканные и стильные
+          аксессуары, которые подчеркнут вашу индивидуальность и сделают ваш
+          образ неповторимым.
+        </p>
+
+        <div class="max-tablet:pt-[32px] tablet:pt-[26px]">
+          <img
+            src="./public/img/about/1.png"
+            src="./public/img/about/1@2x.png 2x"
+            alt="1.png"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
