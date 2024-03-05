@@ -82,7 +82,7 @@
     </script>
   </head>
   <body>
-    <section class="laptop:grid-cols-delivery laptop:grid laptop:pb-[3.75rem]">
+    <section class="laptop:grid laptop:grid-cols-delivery laptop:pb-[3.75rem]">
       <!-- Контактная информация -->
       <div>
         <div class="container laptop:max-w-[512px]">
@@ -96,26 +96,24 @@
               </h3>
 
               <div class="flex flex-col gap-[1.25rem]">
-                <label class="flex cursor-pointer flex-col gap-2" for="inpName">
+                <label class="flex cursor-pointer flex-col gap-2">
                   <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                     >Контактное лицо (ФИО)*</span
                   >
 
                   <input
-                    id="inpName"
                     class="w-full border-[1px] border-black font-light max-tablet:h-[1.875rem] max-tablet:rounded-[1.25rem] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[0.625rem] tablet:h-[48px] tablet:rounded-[35px] tablet:px-[0.875rem] tablet:text-[0.875rem]"
                     type="text"
                     placeholder="Введите имя"
                   />
                 </label>
 
-                <label class="flex cursor-pointer flex-col gap-2" for="inpName">
+                <label class="flex cursor-pointer flex-col gap-2">
                   <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                     >Электронный адрес (Email)*</span
                   >
 
                   <input
-                    id="inpName"
                     class="w-full border-[1px] border-black font-light max-tablet:h-[1.875rem] max-tablet:rounded-[1.25rem] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[0.625rem] tablet:h-[48px] tablet:rounded-[35px] tablet:px-[0.875rem] tablet:text-[0.875rem]"
                     type="text"
                     placeholder="user@gmail.com"
@@ -124,17 +122,15 @@
               </div>
 
               <label
-                id="check-1"
                 class="flex cursor-pointer items-center gap-[0.625rem] pt-[12px]"
               >
                 <input
-                  id="check-1"
                   type="checkbox"
                   class="absolute h-5 w-5 cursor-pointer opacity-0"
                 />
 
                 <div
-                  class="border-grayLight flex h-5 w-5 cursor-pointer items-center justify-center border-[1px]"
+                  class="flex h-5 w-5 cursor-pointer items-center justify-center border-[1px] border-grayLight"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -155,16 +151,12 @@
                 >
               </label>
 
-              <label
-                class="flex cursor-pointer flex-col gap-2 pt-[1.25rem]"
-                for="inpName"
-              >
+              <label class="flex cursor-pointer flex-col gap-2 pt-[1.25rem]">
                 <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                   >Номер телефона</span
                 >
 
                 <input
-                  id="inpName"
                   class="w-full border-[1px] border-black font-light max-tablet:h-[1.875rem] max-tablet:rounded-[1.25rem] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[0.625rem] tablet:h-[48px] tablet:rounded-[35px] tablet:px-[0.875rem] tablet:text-[0.875rem]"
                   type="text"
                   placeholder="+799999487787"
@@ -181,12 +173,8 @@
               <div
                 class="flex flex-col pt-[1.25rem] max-tablet:gap-[12px] tablet:gap-[1.25rem]"
               >
-                <label
-                  id="radio-1"
-                  class="flex cursor-pointer items-center gap-[0.625rem]"
-                >
+                <label class="flex cursor-pointer items-center gap-[0.625rem]">
                   <input
-                    id="radio-1"
                     type="radio"
                     name="delivery"
                     class="absolute h-5 w-5 cursor-pointer opacity-0"
@@ -200,12 +188,8 @@
                   <span class="text-[0.625rem]">Доставка - 500Р</span>
                 </label>
 
-                <label
-                  id="radio-2"
-                  class="flex cursor-pointer items-center gap-[0.625rem]"
-                >
+                <label class="flex cursor-pointer items-center gap-[0.625rem]">
                   <input
-                    id="radio-2"
                     type="radio"
                     name="delivery"
                     class="absolute h-5 w-5 cursor-pointer opacity-0"
@@ -231,7 +215,7 @@
               </h3>
 
               <div class="flex flex-col gap-5">
-                <div class="flex cursor-pointer flex-col gap-2" for="inpName">
+                <div class="flex cursor-pointer flex-col gap-2">
                   <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                     >Город</span
                   >
@@ -244,13 +228,12 @@
                   </select>
                 </div>
 
-                <label class="flex cursor-pointer flex-col gap-2" for="inpName">
+                <label class="flex cursor-pointer flex-col gap-2">
                   <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                     >Улица</span
                   >
 
                   <input
-                    id="inpName"
                     class="w-full border-[1px] border-black font-light max-tablet:h-[1.875rem] max-tablet:rounded-[1.25rem] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[0.625rem] tablet:h-[48px] tablet:rounded-[35px] tablet:px-[0.875rem] tablet:text-[0.875rem]"
                     type="text"
                     placeholder="Ленина 88"
@@ -258,59 +241,46 @@
                 </label>
 
                 <div class="flex gap-[11px]">
-                  <label
-                    class="flex cursor-pointer flex-col gap-2"
-                    for="inpName"
-                  >
+                  <label class="flex cursor-pointer flex-col gap-2">
                     <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                       >Дом</span
                     >
 
                     <input
-                      id="inpName"
                       class="w-full border-[1px] border-black font-light max-tablet:h-[25px] max-tablet:rounded-[1.25rem] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[0.625rem] tablet:h-[1.875rem] tablet:rounded-[35px] tablet:px-[0.875rem] tablet:text-[0.875rem]"
                       type="text"
                     />
                   </label>
 
-                  <label
-                    class="flex cursor-pointer flex-col gap-2"
-                    for="inpName"
-                  >
+                  <label class="flex cursor-pointer flex-col gap-2">
                     <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                       >Подъезд</span
                     >
 
                     <input
-                      id="inpName"
                       class="w-full border-[1px] border-black font-light max-tablet:h-[25px] max-tablet:rounded-[1.25rem] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[0.625rem] tablet:h-[1.875rem] tablet:rounded-[35px] tablet:px-[0.875rem] tablet:text-[0.875rem]"
                       type="text"
                     />
                   </label>
 
-                  <label
-                    class="flex cursor-pointer flex-col gap-2"
-                    for="inpName"
-                  >
+                  <label class="flex cursor-pointer flex-col gap-2">
                     <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                       >Квартира</span
                     >
 
                     <input
-                      id="inpName"
                       class="w-full border-[1px] border-black font-light max-tablet:h-[25px] max-tablet:rounded-[1.25rem] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[0.625rem] tablet:h-[1.875rem] tablet:rounded-[35px] tablet:px-[0.875rem] tablet:text-[0.875rem]"
                       type="text"
                     />
                   </label>
                 </div>
 
-                <label class="flex cursor-pointer flex-col gap-2" for="inpName">
+                <label class="flex cursor-pointer flex-col gap-2">
                   <span class="max-tablet:text-[0.625rem] tablet:text-[12px]"
                     >Почтовый индекс*</span
                   >
 
                   <input
-                    id="inpName"
                     class="w-full border-[1px] border-black font-light max-tablet:h-[1.875rem] max-tablet:rounded-[1.25rem] max-tablet:px-[12px] max-tablet:py-[5px] max-tablet:text-[0.625rem] tablet:h-[48px] tablet:rounded-[35px] tablet:px-[0.875rem] tablet:text-[0.875rem]"
                     type="text"
                   />
@@ -329,7 +299,7 @@
 
               <textarea
                 placeholder="Введите текст"
-                class="h-[155px] w-full resize-none border-[1px] border-black px-3 py-4 text-[0.625rem] placeholder-gray-900"
+                class="placeholder-gray-900 h-[155px] w-full resize-none border-[1px] border-black px-3 py-4 text-[0.625rem]"
               ></textarea>
             </div>
             <!-- /Комментарий к заказу -->
@@ -346,12 +316,8 @@
               <div
                 class="flex flex-col max-tablet:gap-[12px] tablet:gap-[1.25rem]"
               >
-                <label
-                  id="radio-3"
-                  class="flex cursor-pointer items-center gap-[8px]"
-                >
+                <label class="flex cursor-pointer items-center gap-[8px]">
                   <input
-                    id="radio-3"
                     type="radio"
                     name="payment"
                     class="absolute h-5 w-5 cursor-pointer opacity-0"
@@ -365,12 +331,8 @@
                   <span class="text-[0.625rem]">СПБ</span>
                 </label>
 
-                <label
-                  id="radio-4"
-                  class="flex cursor-pointer items-center gap-[8px]"
-                >
+                <label class="flex cursor-pointer items-center gap-[8px]">
                   <input
-                    id="radio-4"
                     type="radio"
                     name="payment"
                     class="absolute h-5 w-5 cursor-pointer opacity-0"
@@ -383,12 +345,8 @@
                   <span class="text-[0.625rem]">Банковская карта</span>
                 </label>
 
-                <label
-                  id="radio-5"
-                  class="flex cursor-pointer items-center gap-[8px]"
-                >
+                <label class="flex cursor-pointer items-center gap-[8px]">
                   <input
-                    id="radio-5"
                     type="radio"
                     name="payment"
                     class="absolute h-5 w-5 cursor-pointer opacity-0"
@@ -401,12 +359,8 @@
                   <span class="text-[0.625rem]">Долями</span>
                 </label>
 
-                <label
-                  id="radio-6"
-                  class="flex cursor-pointer items-center gap-[8px]"
-                >
+                <label class="flex cursor-pointer items-center gap-[8px]">
                   <input
-                    id="radio-6"
                     type="radio"
                     name="payment"
                     class="absolute h-5 w-5 cursor-pointer opacity-0"
@@ -419,12 +373,8 @@
                   <span class="text-[0.625rem]">SberPay</span>
                 </label>
 
-                <label
-                  id="radio-7"
-                  class="flex cursor-pointer items-center gap-[8px]"
-                >
+                <label class="flex cursor-pointer items-center gap-[8px]">
                   <input
-                    id="radio-7"
                     type="radio"
                     name="payment"
                     class="absolute h-5 w-5 cursor-pointer opacity-0"
@@ -450,17 +400,15 @@
               </button>
 
               <label
-                id="check-2"
                 class="gray flex cursor-pointer items-center gap-[0.625rem] pt-[0.938rem]"
               >
                 <input
-                  id="check-2"
                   type="checkbox"
                   class="absolute h-5 w-5 cursor-pointer opacity-0"
                 />
 
                 <div
-                  class="border-grayLight flex h-5 w-5 cursor-pointer items-center justify-center border-[1px]"
+                  class="flex h-5 w-5 cursor-pointer items-center justify-center border-[1px] border-grayLight"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -548,7 +496,7 @@
 
           <!--  Общая инф-ция о товарах -->
           <div
-            class="laptop:after:bg-gray2 relative flex flex-col gap-[1.875rem] max-laptop:pt-[45px] laptop:pb-[1.25rem] laptop:pt-[1.25rem] laptop:after:absolute laptop:after:bottom-0 laptop:after:left-0 laptop:after:h-[2px] laptop:after:w-full laptop:after:content-['']"
+            class="relative flex flex-col gap-[1.875rem] max-laptop:pt-[45px] laptop:pb-[1.25rem] laptop:pt-[1.25rem] laptop:after:absolute laptop:after:bottom-0 laptop:after:left-0 laptop:after:h-[2px] laptop:after:w-full laptop:after:bg-gray2 laptop:after:content-['']"
           >
             <div
               class="flex justify-between text-[12px] font-medium max-laptop:hidden"
@@ -566,9 +514,9 @@
           </div>
 
           <div
-            class="max-laptop:after:bg-gray2 relative flex flex-col gap-[0.875rem] max-laptop:pb-[1.625rem] max-laptop:pt-[1rem] max-laptop:after:absolute max-laptop:after:bottom-0 max-laptop:after:left-0 max-laptop:after:h-[2px] max-laptop:after:w-full max-laptop:after:content-[''] laptop:pt-[1.25rem]"
+            class="relative flex flex-col gap-[0.875rem] max-laptop:pb-[1.625rem] max-laptop:pt-[1rem] max-laptop:after:absolute max-laptop:after:bottom-0 max-laptop:after:left-0 max-laptop:after:h-[2px] max-laptop:after:w-full max-laptop:after:bg-gray2 max-laptop:after:content-[''] laptop:pt-[1.25rem]"
           >
-            <div class="text-darkGray flex justify-between text-[0.625rem]">
+            <div class="flex justify-between text-[0.625rem] text-darkGray">
               <span>Скидка</span>
 
               <span>-360₽</span>
@@ -591,17 +539,15 @@
             </button>
 
             <label
-              id="check-2"
               class="flex cursor-pointer items-center gap-[8px] pt-[0.938rem] font-light"
             >
               <input
-                id="check-2"
                 type="checkbox"
                 class="absolute h-5 w-5 cursor-pointer opacity-0"
               />
 
               <div
-                class="border-grayLight flex h-5 w-5 cursor-pointer items-center justify-center border-[1px]"
+                class="flex h-5 w-5 cursor-pointer items-center justify-center border-[1px] border-grayLight"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
