@@ -51,7 +51,9 @@
               grayLight: "#E5EAED",
               darkGray: "#565656",
               darkGray2: "#505050",
+
               red2: "#A42D2A",
+              "red2-hover": "#c71010",
             },
             gridTemplateColumns: {
               newItems: "repeat(4, 1fr)",
@@ -127,7 +129,7 @@
           </h3>
 
           <button
-            class="h-11 w-full max-w-[10.625rem] rounded-main bg-red2 font-montserrat text-[0.75rem] font-bold uppercase tracking-[3px] max-tablet:hidden"
+            class="hover:bg-red2-hover h-11 w-full max-w-[10.625rem] rounded-main bg-red2 font-montserrat text-[0.75rem] font-bold uppercase tracking-[3px] transition-colors max-tablet:hidden"
           >
             Купить
           </button>
@@ -189,32 +191,32 @@
       class="container block max-w-[84rem] overflow-x-scroll whitespace-nowrap py-11 text-center font-montserrat max-laptop:text-[0.875rem] max-laptop:tracking-[0.15px] max-tablet:mb-[2.5rem] max-tablet:pb-[1.25rem] max-tablet:pt-[2rem] max-tablet:text-[0.5rem] laptop:tracking-[2px]"
     >
       <button
-        class="mr-6 h-11 w-full shrink-0 rounded-main border-[1px] border-black max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
+        class="mr-6 h-11 w-full shrink-0 rounded-main border-[1px] border-black transition-colors hover:bg-black hover:text-primary max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
       >
         кольца
       </button>
       <button
-        class="mr-6 h-11 w-full shrink-0 rounded-main border-[1px] border-black max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
+        class="mr-6 h-11 w-full shrink-0 rounded-main border-[1px] border-black transition-colors hover:bg-black hover:text-primary max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
       >
         серьги
       </button>
       <button
-        class="mr-6 h-11 w-full shrink-0 rounded-main border-[1px] border-black max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
+        class="mr-6 h-11 w-full shrink-0 rounded-main border-[1px] border-black transition-colors hover:bg-black hover:text-primary max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
       >
         подвески
       </button>
       <button
-        class="mr-6 h-11 w-full shrink-0 rounded-main border-[1px] border-black max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
+        class="mr-6 h-11 w-full shrink-0 rounded-main border-[1px] border-black transition-colors hover:bg-black hover:text-primary max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
       >
         броши
       </button>
       <button
-        class="mr-6 h-11 w-full shrink-0 rounded-main border-[1px] border-black max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
+        class="mr-6 h-11 w-full shrink-0 rounded-main border-[1px] border-black transition-colors hover:bg-black hover:text-primary max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
       >
         сумки
       </button>
       <button
-        class="mr-6 h-11 w-full shrink-0 rounded-main border-[1px] border-black max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
+        class="mr-6 h-11 w-full shrink-0 rounded-main border-[1px] border-black transition-colors hover:bg-black hover:text-primary max-laptop:mr-4 max-laptop:max-w-[7.5rem] max-tablet:mr-[0.5rem] max-tablet:h-5 max-tablet:max-w-[4.25rem] laptop:max-w-[10.625rem]"
       >
         сертификаты
       </button>
@@ -244,20 +246,23 @@
                     alt="1.png"
                   />
 
-                  <svg
-                    class="absolute right-[0.5rem] top-[0.625rem]"
-                    width="18.430664"
-                    height="16.285156"
-                    viewBox="0 0 18.4307 16.2852"
-                    fill="none"
-                  >
-                    <path
-                      d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
-                      stroke="#222222"
-                      stroke-opacity="1.000000"
-                      stroke-width="1.000000"
-                    />
-                  </svg>
+                  <button class="group">
+                    <svg
+                      class="group-hover:text-red2-hover absolute right-[0.5rem] top-[0.625rem] group-hover:fill-current group-hover:stroke-current"
+                      width="18.430664"
+                      height="16.285156"
+                      viewBox="0 0 18.4307 16.2852"
+                      fill="none"
+                    >
+                      <path
+                        class="group-hover:stroke-transparent"
+                        d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
+                        stroke="#222222"
+                        stroke-opacity="1.000000"
+                        stroke-width="1.000000"
+                      />
+                    </svg>
+                  </button>
                 </div>
 
                 <div
@@ -278,20 +283,23 @@
                     alt="2.png"
                   />
 
-                  <svg
-                    class="absolute right-[0.5rem] top-[0.625rem]"
-                    width="18.430664"
-                    height="16.285156"
-                    viewBox="0 0 18.4307 16.2852"
-                    fill="none"
-                  >
-                    <path
-                      d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
-                      stroke="#222222"
-                      stroke-opacity="1.000000"
-                      stroke-width="1.000000"
-                    />
-                  </svg>
+                  <button class="group">
+                    <svg
+                      class="group-hover:text-red2-hover absolute right-[0.5rem] top-[0.625rem] group-hover:fill-current group-hover:stroke-current"
+                      width="18.430664"
+                      height="16.285156"
+                      viewBox="0 0 18.4307 16.2852"
+                      fill="none"
+                    >
+                      <path
+                        class="group-hover:stroke-transparent"
+                        d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
+                        stroke="#222222"
+                        stroke-opacity="1.000000"
+                        stroke-width="1.000000"
+                      />
+                    </svg>
+                  </button>
                 </div>
 
                 <div
@@ -312,20 +320,23 @@
                     alt="3.png"
                   />
 
-                  <svg
-                    class="absolute right-[0.5rem] top-[0.625rem]"
-                    width="18.430664"
-                    height="16.285156"
-                    viewBox="0 0 18.4307 16.2852"
-                    fill="none"
-                  >
-                    <path
-                      d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
-                      stroke="#222222"
-                      stroke-opacity="1.000000"
-                      stroke-width="1.000000"
-                    />
-                  </svg>
+                  <button class="group">
+                    <svg
+                      class="group-hover:text-red2-hover absolute right-[0.5rem] top-[0.625rem] group-hover:fill-current group-hover:stroke-current"
+                      width="18.430664"
+                      height="16.285156"
+                      viewBox="0 0 18.4307 16.2852"
+                      fill="none"
+                    >
+                      <path
+                        class="group-hover:stroke-transparent"
+                        d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
+                        stroke="#222222"
+                        stroke-opacity="1.000000"
+                        stroke-width="1.000000"
+                      />
+                    </svg>
+                  </button>
                 </div>
 
                 <div
@@ -346,20 +357,23 @@
                     alt="4.png"
                   />
 
-                  <svg
-                    class="absolute right-[0.5rem] top-[0.625rem]"
-                    width="18.430664"
-                    height="16.285156"
-                    viewBox="0 0 18.4307 16.2852"
-                    fill="none"
-                  >
-                    <path
-                      d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
-                      stroke="#222222"
-                      stroke-opacity="1.000000"
-                      stroke-width="1.000000"
-                    />
-                  </svg>
+                  <button class="group">
+                    <svg
+                      class="group-hover:text-red2-hover absolute right-[0.5rem] top-[0.625rem] group-hover:fill-current group-hover:stroke-current"
+                      width="18.430664"
+                      height="16.285156"
+                      viewBox="0 0 18.4307 16.2852"
+                      fill="none"
+                    >
+                      <path
+                        class="group-hover:stroke-transparent"
+                        d="M2.24023 9.50586C0.166016 7.55664 -0.0859375 4.34961 1.65918 2.10156C3.54492 -0.330078 7.33105 0.078125 8.65625 2.85547C8.84375 3.24805 9.40234 3.24805 9.58887 2.85547C10.9141 0.078125 14.7002 -0.330078 16.5869 2.10156L16.8828 2.48438C18.46 4.51562 18.2324 7.41406 16.3574 9.17578L9.80078 15.334L9.12988 15.7852L9.11523 15.7852L8.44531 15.334L2.24023 9.50586Z"
+                        stroke="#222222"
+                        stroke-opacity="1.000000"
+                        stroke-width="1.000000"
+                      />
+                    </svg>
+                  </button>
                 </div>
 
                 <div
@@ -394,8 +408,9 @@
                 >
                   Кольца на любой случай
                 </p>
+
                 <button
-                  class="min-w-[8.313rem] rounded-main border-[1px] border-primary font-montserrat text-[0.625rem] font-bold max-tablet:min-h-[1rem] max-tablet:min-w-[3.75rem] max-tablet:text-[0.5rem] max-tablet:tracking-[0.4px] tablet:min-h-[2.25rem] tablet:tracking-[2.5px]"
+                  class="min-w-[8.313rem] rounded-main border-[1px] border-primary font-montserrat text-[0.625rem] font-bold transition-colors hover:bg-primary hover:text-black max-tablet:min-h-[1rem] max-tablet:min-w-[3.75rem] max-tablet:text-[0.5rem] max-tablet:tracking-[0.4px] tablet:min-h-[2.25rem] tablet:tracking-[2.5px]"
                 >
                   купить
                 </button>
@@ -419,7 +434,7 @@
                   Кольца на любой случай
                 </p>
                 <button
-                  class="min-w-[8.313rem] rounded-main border-[1px] border-primary font-montserrat text-[0.625rem] font-bold max-tablet:min-h-[1rem] max-tablet:min-w-[3.75rem] max-tablet:text-[0.5rem] max-tablet:tracking-[0.4px] tablet:min-h-[2.25rem] tablet:tracking-[2.5px]"
+                  class="min-w-[8.313rem] rounded-main border-[1px] border-primary font-montserrat text-[0.625rem] font-bold transition-colors hover:bg-primary hover:text-black max-tablet:min-h-[1rem] max-tablet:min-w-[3.75rem] max-tablet:text-[0.5rem] max-tablet:tracking-[0.4px] tablet:min-h-[2.25rem] tablet:tracking-[2.5px]"
                 >
                   купить
                 </button>
@@ -443,7 +458,7 @@
                   Кольца на любой случай
                 </p>
                 <button
-                  class="min-w-[8.313rem] rounded-main border-[1px] border-primary font-montserrat text-[0.625rem] font-bold max-tablet:min-h-[1rem] max-tablet:min-w-[3.75rem] max-tablet:text-[0.5rem] max-tablet:tracking-[0.4px] tablet:min-h-[2.25rem] tablet:tracking-[2.5px]"
+                  class="min-w-[8.313rem] rounded-main border-[1px] border-primary font-montserrat text-[0.625rem] font-bold transition-colors hover:bg-primary hover:text-black max-tablet:min-h-[1rem] max-tablet:min-w-[3.75rem] max-tablet:text-[0.5rem] max-tablet:tracking-[0.4px] tablet:min-h-[2.25rem] tablet:tracking-[2.5px]"
                 >
                   купить
                 </button>
@@ -495,12 +510,13 @@
                   </div>
 
                   <button
-                    class="max-w-[10.625rem] rounded-main bg-third font-montserrat text-[0.75rem] font-bold uppercase tracking-[3px] text-red2 max-tablet:min-h-[2.188rem] max-mobile:min-h-[1rem] max-mobile:w-[59px] max-mobile:text-[0.5rem] max-mobile:tracking-[0.4px] mobile:w-full tablet:min-h-[2.813rem]"
+                    class="max-w-[10.625rem] rounded-main bg-third font-montserrat text-[0.75rem] font-bold uppercase tracking-[3px] text-red2 transition-colors hover:bg-primary max-tablet:min-h-[2.188rem] max-mobile:min-h-[1rem] max-mobile:w-[59px] max-mobile:text-[0.5rem] max-mobile:tracking-[0.4px] mobile:w-full tablet:min-h-[2.813rem]"
                   >
                     купить
                   </button>
                 </div>
               </article>
+
               <article class="col swiper-slide flex flex-col">
                 <img
                   class="w-full"
@@ -518,12 +534,13 @@
                   </div>
 
                   <button
-                    class="max-w-[10.625rem] rounded-main bg-third font-montserrat text-[0.75rem] font-bold uppercase tracking-[3px] text-red2 max-tablet:min-h-[2.188rem] max-mobile:min-h-[1rem] max-mobile:w-[59px] max-mobile:text-[0.5rem] max-mobile:tracking-[0.4px] mobile:w-full tablet:min-h-[2.813rem]"
+                    class="max-w-[10.625rem] rounded-main bg-third font-montserrat text-[0.75rem] font-bold uppercase tracking-[3px] text-red2 transition-colors hover:bg-primary max-tablet:min-h-[2.188rem] max-mobile:min-h-[1rem] max-mobile:w-[59px] max-mobile:text-[0.5rem] max-mobile:tracking-[0.4px] mobile:w-full tablet:min-h-[2.813rem]"
                   >
                     купить
                   </button>
                 </div>
               </article>
+
               <article class="col swiper-slide flex flex-col">
                 <img
                   class="w-full"
@@ -541,7 +558,7 @@
                   </div>
 
                   <button
-                    class="max-w-[10.625rem] rounded-main bg-third font-montserrat text-[0.75rem] font-bold uppercase tracking-[3px] text-red2 max-tablet:min-h-[2.188rem] max-mobile:min-h-[1rem] max-mobile:w-[59px] max-mobile:text-[0.5rem] max-mobile:tracking-[0.4px] mobile:w-full tablet:min-h-[2.813rem]"
+                    class="max-w-[10.625rem] rounded-main bg-third font-montserrat text-[0.75rem] font-bold uppercase tracking-[3px] text-red2 transition-colors hover:bg-primary max-tablet:min-h-[2.188rem] max-mobile:min-h-[1rem] max-mobile:w-[59px] max-mobile:text-[0.5rem] max-mobile:tracking-[0.4px] mobile:w-full tablet:min-h-[2.813rem]"
                   >
                     купить
                   </button>
@@ -627,7 +644,7 @@
         </p>
 
         <button
-          class="max-w-[10.625rem] rounded-main border-red2 font-montserrat uppercase max-tablet:h-[1rem] max-tablet:w-[4.5rem] max-tablet:border-[0.5px] max-tablet:text-[0.5rem] max-tablet:font-light tablet:h-11 tablet:w-full tablet:border-[1px] tablet:text-[0.75rem] tablet:font-bold tablet:tracking-[3px]"
+          class="hover:bg-red2-hover max-w-[10.625rem] rounded-main border-red2 font-montserrat uppercase transition-colors hover:text-primary max-tablet:h-[1rem] max-tablet:w-[4.5rem] max-tablet:border-[0.5px] max-tablet:text-[0.5rem] max-tablet:font-light tablet:h-11 tablet:w-full tablet:border-[1px] tablet:text-[0.75rem] tablet:font-bold tablet:tracking-[3px]"
         >
           подарить
         </button>
@@ -656,7 +673,7 @@
             </div>
 
             <button
-              class="max-w-[10.625rem] rounded-main bg-red2 font-montserrat text-[0.75rem] font-bold uppercase text-primary max-mobile:h-[1.125rem] max-mobile:w-[3.75rem] max-mobile:text-[0.5rem] max-mobile:font-light max-mobile:tracking-[0.5px] mobile:h-11 mobile:w-full mobile:tracking-[3px]"
+              class="hover:bg-red2-hover max-w-[10.625rem] rounded-main bg-red2 font-montserrat text-[0.75rem] font-bold uppercase text-primary transition-colors max-mobile:h-[1.125rem] max-mobile:w-[3.75rem] max-mobile:text-[0.5rem] max-mobile:font-light max-mobile:tracking-[0.5px] mobile:h-11 mobile:w-full mobile:tracking-[3px]"
             >
               Купить
             </button>

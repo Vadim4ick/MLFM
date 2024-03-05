@@ -44,7 +44,9 @@
               grayLight: "#E5EAED",
               darkGray: "#565656",
               darkGray2: "#505050",
+
               red2: "#A42D2A",
+              "red2-hover": "#c71010",
             },
             gridTemplateColumns: {
               newItems: "repeat(4, 1fr)",
@@ -82,6 +84,7 @@
     </script>
   </head>
   <body>
+    <!-- hover:bg-red2-hover hover:text-primary transition-colors -->
     <section class="laptop:grid laptop:grid-cols-delivery laptop:pb-[3.75rem]">
       <!-- Контактная информация -->
       <div>
@@ -394,7 +397,7 @@
             <!-- Кнопка оплаты на ПК -->
             <div class="mt-[1.875rem] max-laptop:hidden">
               <button
-                class="w-full bg-red2 text-primary max-tablet:min-h-[1.875rem] max-tablet:rounded-[1.25rem] max-tablet:text-[0.625rem] tablet:min-h-[45px] tablet:rounded-[1.875rem]"
+                class="hover:bg-red2-hover w-full bg-red2 text-primary transition-colors max-tablet:min-h-[1.875rem] max-tablet:rounded-[1.25rem] max-tablet:text-[0.625rem] tablet:min-h-[45px] tablet:rounded-[1.875rem]"
               >
                 Оплатить заказ
               </button>
@@ -533,7 +536,7 @@
           <!-- Кнопка оплаты на Мобилках -->
           <div class="my-[1.25rem] laptop:hidden">
             <button
-              class="w-full bg-red2 text-primary max-tablet:min-h-[37px] max-tablet:rounded-[1.25rem] max-tablet:text-[0.625rem] tablet:min-h-[45px] tablet:rounded-[1.875rem]"
+              class="hover:bg-red2-hover w-full bg-red2 text-primary transition-colors max-tablet:min-h-[37px] max-tablet:rounded-[1.25rem] max-tablet:text-[0.625rem] tablet:min-h-[45px] tablet:rounded-[1.875rem]"
             >
               Оплатить заказ
             </button>

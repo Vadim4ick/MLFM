@@ -44,7 +44,9 @@
               grayLight: "#E5EAED",
               darkGray: "#565656",
               darkGray2: "#505050",
+
               red2: "#A42D2A",
+              "red2-hover": "#c71010",
             },
             gridTemplateColumns: {
               newItems: "repeat(4, 1fr)",
@@ -104,7 +106,7 @@
           />
 
           <button
-            class="bg-red2 text-primary max-tablet:min-h-[1.875rem] max-tablet:rounded-[1.25rem] max-tablet:text-[0.625rem] tablet:min-h-[45px] tablet:rounded-[1.875rem]"
+            class="hover:bg-red2-hover bg-red2 text-primary transition-colors max-tablet:min-h-[1.875rem] max-tablet:rounded-[1.25rem] max-tablet:text-[0.625rem] tablet:min-h-[45px] tablet:rounded-[1.875rem]"
           >
             Войти
           </button>
@@ -117,7 +119,7 @@
         <div class="mt-[24px] w-full text-center">
           <a
             href="javascript:void(0)"
-            class="text-[0.875rem] font-extralight underline"
+            class="text-[0.875rem] font-extralight underline hover:no-underline"
           >
             Забыли пароль?
           </a>
@@ -128,7 +130,9 @@
         >
           <span>У вас нет учетной записи?</span>
 
-          <a href="javascript:void(0)" class="underline">Зарегистрироваться</a>
+          <a href="javascript:void(0)" class="underline hover:no-underline"
+            >Зарегистрироваться</a
+          >
         </div>
       </div>
     </section>

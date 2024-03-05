@@ -1,18 +1,3 @@
-// /** @type {import('tailwindcss').Config} */
-
-// tailwind.config = {
-// theme: {
-//   extend: {
-//     colors: {
-//       brown: "rgb(164, 45, 42)",
-//     },
-//     gridTemplateColumns: {
-//       newItems: "repeat(4, 1fr)",
-//     },
-//   },
-// },
-// };
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./**/*.{html,js}"],
@@ -27,7 +12,9 @@ module.exports = {
         grayLight: "#E5EAED",
         darkGray: "#565656",
         darkGray2: "#505050",
+
         red2: "#A42D2A",
+        "red2-hover": "#c71010",
       },
       gridTemplateColumns: {
         newItems: "repeat(4, 1fr)",
