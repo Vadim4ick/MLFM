@@ -22,6 +22,7 @@ module.exports = {
         buyImageMobile: "1fr 100px",
         catalogItem: "1fr 410px",
         aside: "275px 1fr",
+        giftCart: "618px 1fr",
         delivery: "49% 51%",
       },
       borderRadius: {

@@ -61,6 +61,7 @@
               buyImageMobile: "1fr 100px",
               aside: "275px 1fr",
               delivery: "49% 51%",
+              giftCart: "618px 1fr",
             },
             fontFamily: {
               main: ["Unbounded"],
@@ -620,36 +621,46 @@
     <!-- /фирменный магазин -->
 
     <!-- Подарочные карты -->
-    <section class="relative bg-third">
-      <img
-        class="h-full w-full max-tablet:ml-[-45px] max-mobile:ml-[-35px]"
-        src="./public/img/giftCards/1.png"
-        srcset="./public/img/giftCards/1@2x.png 2x"
-        alt="1.png"
-      />
 
+    <section class="relative w-full bg-third">
       <div
-        class="absolute text-red2 max-laptop:right-[20%] max-tablet:right-[3%] max-tablet:top-[1rem] max-mobile:right-[10%] max-mobile:max-w-[5.938rem] mobile:max-w-[12.5rem] tablet:top-1/2 tablet:translate-y-[-40%] laptop:right-[17%]"
+        class="container max-w-[1127px] max-tablet:py-[20px] tablet:py-[50px]"
       >
-        <h3
-          class="font-bold uppercase max-laptop:text-[1rem] max-laptop:tracking-[0.25rem] max-tablet:mb-[0.625rem] max-mobile:text-[0.5rem] max-mobile:tracking-[2px] tablet:mb-[1.313rem] laptop:text-[1.313rem] laptop:tracking-[5.25px]"
+        <div
+          class="laptop:grid-cols-giftCart items-center justify-items-center gap-5 max-laptop:flex laptop:grid"
         >
-          Подарочные карты
-        </h3>
+          <div>
+            <img
+              class="h-full w-full"
+              src="./public/img/giftCards/image.png"
+              srcset="./public/img/giftCards/image2x.png 2x"
+              alt="1.png"
+            />
+          </div>
 
-        <p
-          class="font-montserrat max-laptop:text-[0.875rem] max-tablet:mb-[0.625rem] max-mobile:text-[0.5rem] tablet:mb-[2.5rem]"
-        >
-          Идеальный подарок на любой праздник!
-        </p>
+          <div class="max-w-[245px] text-red2">
+            <h3
+              class="font-bold uppercase max-laptop:text-[1rem] max-laptop:tracking-[0.25rem] max-tablet:mb-[0.625rem] max-mobile:text-[0.5rem] max-mobile:tracking-[2px] tablet:mb-[1.313rem] laptop:text-[1.313rem] laptop:tracking-[5.25px]"
+            >
+              Подарочные карты
+            </h3>
 
-        <button
-          class="max-w-[10.625rem] rounded-main border-red2 font-montserrat uppercase transition-colors hover:bg-red2-hover hover:text-primary max-tablet:h-[1rem] max-tablet:w-[4.5rem] max-tablet:border-[0.5px] max-tablet:text-[0.5rem] max-tablet:font-light tablet:h-11 tablet:w-full tablet:border-[1px] tablet:text-[0.75rem] tablet:font-bold tablet:tracking-[3px]"
-        >
-          подарить
-        </button>
+            <p
+              class="font-montserrat max-laptop:text-[0.875rem] max-tablet:mb-[0.625rem] max-mobile:text-[0.5rem] tablet:mb-[2.5rem]"
+            >
+              Идеальный подарок на любой праздник!
+            </p>
+
+            <button
+              class="max-w-[10.625rem] rounded-main border-red2 font-montserrat uppercase transition-colors hover:bg-red2-hover hover:text-primary max-tablet:h-[1rem] max-tablet:w-[4.5rem] max-tablet:border-[0.5px] max-tablet:text-[0.5rem] max-tablet:font-light tablet:h-11 tablet:w-full tablet:border-[1px] tablet:text-[0.75rem] tablet:font-bold tablet:tracking-[3px]"
+            >
+              подарить
+            </button>
+          </div>
+        </div>
       </div>
     </section>
+
     <!-- /Подарочные карты -->
 
     <!-- Выбор стилиста -->
